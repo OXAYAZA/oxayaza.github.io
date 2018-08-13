@@ -18,12 +18,12 @@ function isIE() {
     if (o.length > 0) {
         include('js/jquery.vide.js');
     }
-})(jQuery); 
+})(jQuery);
 
-/* Mobilemenu 
-=============================================*/ 
-;(function ($) { 
-     include('js/jquery.rd-navbar.js'); 
+/* Mobilemenu
+=============================================*/
+;(function ($) {
+     include('js/jquery.rd-navbar.js');
 })(jQuery);
 
 /* Owl Carousel
@@ -129,19 +129,11 @@ include('js/jquery.easing.1.3.js');
             o.fancybox();
         });
     }
-})(jQuery); 
+})(jQuery);
 
 /* RD Mailform
  =============================================*/
 ;(function ($) {
     include('js/mailform/jquery.form.min.js');
     include('js/mailform/jquery.rd-mailform.min.js');
-})(jQuery); 
-
-/* Smooth Scroll
- =============================================*/
-;(function ($) {
-    if ($("html").hasClass("smoothscroll")) {
-        include('js/rd-smoothscroll.js');
-    }
 })(jQuery);
