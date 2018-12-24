@@ -1,9 +1,9 @@
-self.addEventListener('install', event => {
+self.addEventListener( 'install', function( event ) {
 	// Do install stuff
-	console.warn( 'cp1' );
+	console.warn( 'SW install' );
 });
 
-self.addEventListener('activate', event => {
+self.addEventListener( 'activate', function ( event ) {
 	// Do activate stuff: This will come later on.
-	console.warn( 'cp2' );
+	console.warn( 'SW activate' );
 });
