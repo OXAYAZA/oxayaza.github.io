@@ -35,6 +35,21 @@ html( lang='en' )
 
 		link( rel='stylesheet', href='css/style.css' )
 
+		//- Service worker
+		script.
+			if ( 'serviceWorker' in navigator ) {
+				window.addEventListener( 'load', function() {
+					navigator.serviceWorker.register( '/sw.js' ).then(
+						function( registration ) {
+							console.warn( 'ServiceWorker registration successful with scope: ', registration.scope ); // Registration was successful
+						},
+						function( error ) {
+							console.warn( 'ServiceWorker registration failed: ', error ); // Registration failed
+						}
+					);
+				});
+			}
+			
 	body
 		.page
 			block page
