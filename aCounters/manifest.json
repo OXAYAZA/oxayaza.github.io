@@ -2,7 +2,7 @@
 	"name": "aCounters",
 	"short_name": "aCounters",
 	"lang": "en",
-	"start_url": "aCounters/",
+	"start_url": "/aCounters",
 	"display": "standalone",
 	"theme_color": "#313233",
 	"background_color": "#313233",
