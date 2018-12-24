@@ -2,6 +2,7 @@
 .idea
 node_modules
 versions
+sources
 
 # Файлы
 package-lock.json

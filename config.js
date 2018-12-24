@@ -1,12 +1,14 @@
 const
 	action = require( 'tempaw-functions' ).action,
-	preset = require( 'tempaw-functions' ).preset;
+	preset = require( 'tempaw-functions' ).preset,
+
+	ROOT = 'aCounters'; // emitty hardcode
 
 module.exports = {
 	livedemo: {
 		enable: true,
 		server: {
-			baseDir: "dev/",
+			baseDir: `${ROOT}/`,
 			directory: false
 		},
 		port: 8000,
@@ -22,9 +24,9 @@ module.exports = {
 	sass: {
 		enable: true,
 		showTask: false,
-		watch: `dev/sass/**/*.scss`,
-		source: `dev/sass/!(_).scss`,
-		dest: 'dev/css/',
+		watch: `${ROOT}sass/**/*.scss`,
+		source: `${ROOT}sass/!(_).scss`,
+		dest: `${ROOT}css/`,
 		options: {
 			outputStyle: 'expanded',
 			indentType: 'tab',
@@ -35,16 +37,16 @@ module.exports = {
 	less: {
 		enable: false,
 		showTask: false,
-		watch: 'dev/less/**/*.less',
-		source: 'dev/less/style.less',
-		dest: 'dev/css/'
+		watch: `${ROOT}/less/**/*.less`,
+		source: `${ROOT}/less/style.less`,
+		dest: `${ROOT}/css/`
 	},
 	pug: {
 		enable: true,
 		showTask: false,
-		watch: 'dev/pug/**/*.pug',
-		source: 'dev/pug/!(_)*.pug',
-		dest: 'dev/',
+		watch: `${ROOT}/pug/**/*.pug`,
+		source: `${ROOT}/pug/!(_)*.pug`,
+		dest: `${ROOT}/`,
 		options: {
 			pretty: true,
 			verbose: true,
@@ -54,18 +56,18 @@ module.exports = {
 	jade: {
 		enable: false,
 		showTask: false,
-		watch: 'dev/jade/**/*.jade',
-		source: 'dev/jade/pages/!(_)*.jade',
-		dest: 'dev/',
+		watch: `${ROOT}/jade/**/*.jade`,
+		source: `${ROOT}/jade/pages/!(_)*.jade`,
+		dest: `${ROOT}/`,
 		options: {
 			pretty: true
 		}
 	},
 	babel: {
 		enable: false,
-		watch: 'dev/babel/**/!(_)*.js',
-		source: 'dev/babel/!(_)*.js',
-		dest: 'dev/js/',
+		watch: `${ROOT}/babel/**/!(_)*.js`,
+		source: `${ROOT}/babel/!(_)*.js`,
+		dest: `${ROOT}/js/`,
 		options: {
 			presets: ['env'],
 			comments: false,
@@ -86,22 +88,22 @@ module.exports = {
 	},
 	watcher: {
 		enable: true,
-		watch: 'dev/js/**/*.js'
+		watch: `${ROOT}/js/**/*.js`
 	},
 	htmlValidate: {
 		showTask: false,
-		source: 'dev/*.html',
-		report: 'dev/'
+		source: `${ROOT}/*.html`,
+		report: `${ROOT}/`
 	},
 	jadeToPug: {
 		showTask: false,
-		source: 'dev/jade/**/*.jade',
-		dest: 'dev/pug/'
+		source: `${ROOT}/jade/**/*.jade`,
+		dest: `${ROOT}/pug/`
 	},
 	lessToScss: {
 		showTask: false,
-		source: 'dev/less/**/*.less',
-		dest: 'dev/scss/'
+		source: `${ROOT}/less/**/*.less`,
+		dest: `${ROOT}/scss/`
 	},
 	cache: {
 		showTask: false,
