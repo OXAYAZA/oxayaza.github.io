@@ -1,0 +1,7 @@
+# Папки
+.idea
+node_modules
+versions
+
+# Файлы
+package-lock.json
