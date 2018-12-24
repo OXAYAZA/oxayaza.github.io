@@ -43,7 +43,7 @@ html( lang='en' )
 		script.
 			if ( 'serviceWorker' in navigator ) {
 				window.addEventListener( 'load', function() {
-					navigator.serviceWorker.register( '/sw.js' ).then(
+					navigator.serviceWorker.register( '/serviceWorker.js', { scope: '/aCounters' } ).then(
 						function( registration ) {
 							console.warn( 'ServiceWorker registration successful with scope: ', registration.scope ); // Registration was successful
 						},
