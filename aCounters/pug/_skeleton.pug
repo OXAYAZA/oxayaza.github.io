@@ -42,9 +42,7 @@ html( lang='en' )
 		//- Service worker
 		script.
 			if ( 'serviceWorker' in navigator ) {
-				console.log( 'cp1' );
 				window.addEventListener( 'load', function() {
-					console.log( 'cp2' );
 					navigator.serviceWorker.register( '/sw.js' ).then(
 						function( registration ) {
 							console.warn( 'ServiceWorker registration successful with scope: ', registration.scope ); // Registration was successful
