@@ -1,8 +1,8 @@
 # Папки
-.idea
-node_modules
-versions
-sources
+/.idea
+/node_modules
+/versions
+/sources
 
 # Файлы
-package-lock.json
+/package-lock.json

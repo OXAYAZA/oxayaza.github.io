@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Reusable Donut Chart in D3 v4</title>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<script src='https://d3js.org/d3.v4.min.js'></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+	<link rel='stylesheet' href='style.css'>
+	<script src='core.js'></script>
+</head>
+<body>
+
+<div class='wrap'>
+	<div class='donut-chart' data-donut='[{ "Title": "Dark Gray", "Percentage": "0.05", "Fill": "#313233" }, { "Title": "Gray", "Percentage": "0.08", "Fill": "#999" }, { "Title": "Red", "Percentage": "0.1", "Fill": "#f00" }, { "Title": "Undefined", "Percentage": "0.01" }]'></div>
+	<div class='donut-chart' data-donut='[{ "Title": "Dark Gray", "Percentage": "0.5", "Fill": "#313233" }, { "Title": "Gray", "Percentage": "0.08", "Fill": "#999" }, { "Title": "Red", "Percentage": "0.1", "Fill": "#f00" }, { "Title": "Undefined", "Percentage": "0.05" }]'></div>
+</div>
+
+<script>
+	var plugins = {
+		donutChart: document.querySelectorAll( '[data-donut]' )
+	}
+
+	if ( plugins.donutChart ) {
+		for ( var i = 0; i < plugins.donutChart.length; i++ ) {
+			// TODO
+			// передавать параметры обьектом
+			// параметры по умолчанию
+			// форматирование процентов (да и не только процентов)
+			var
+				node = plugins.donutChart[ i ],
+				donut = donutChart()
+					.width( 600 )
+					.height( 300 )
+					.thickness( .4 )
+					.cornerRadius( 5 )
+					.padAngle( .02 )
+					.variable( 'Percentage' )
+					.category( 'Title' )
+					.fill( 'Fill' );
+
+			d3.select( node )
+				.datum( JSON.parse( node.getAttribute( 'data-donut' ) ) )
+				.call( donut );
+		}
+	}
+</script>
+
+</body>
+</html>
