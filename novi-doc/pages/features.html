@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Documentation</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="../images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Page-->
+    <div class="page">
+      <div class="page-loader"><img src="../images/novi-logo-61x54.png" alt="" width="61" height="54"/>
+        <h5>LOADING<span class="dot-1"></span><span class="dot-2"></span><span class="dot-3"></span></h5>
+      </div>
+      <header class="page-header bg-gray-darker section-xs">
+        <div class="shell">
+          <div class="range range-xs-justify range-middle">
+            <div class="cell-xs-4"><a class="brand-logo" href="../../index.html"> <img src="../images/intro-novi-logo-30x30.png" alt="" width="30" height="30"/><span>Novi builder</span></a></div>
+            <div class="cell-xs-4 text-sm-right">
+              <h6>Documentation v.0.9.2</h6>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="main-section bg-white section-lg">
+        <div class="shell">
+          <div class="range range-md-justify">
+            <div class="cell-sm-4 cell-md-3" style="position:relative;">
+              <!-- Navigation-->
+              <!-- RD Navbar-->
+              <div class="rd-navbar-wrap">
+                <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-sidebar" data-sm-device-layout="rd-navbar-sidebar" data-md-device-layout="rd-navbar-sidebar" data-md-layout="rd-navbar-sidebar" data-lg-layout="rd-navbar-sidebar" data-lg-device-layout="rd-navbar-sidebar" data-sm-auto-height="false" data-md-auto-height="false" data-lg-auto-height="false">
+                  <!-- RD Navbar Toggle -->
+                  <button class="rd-navbar-sidebar-toggle" data-rd-navbar-toggle=".rd-navbar-sidebar-inner"><span></span></button>
+                  <div class="rd-navbar-sidebar-inner">
+                    <div class="rd-navbar-inner">
+                      <!-- RD Navbar Panel-->
+                      <div class="rd-navbar-panel">
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                      </div>
+                      <div class="rd-navbar-aside-right">
+                        <div class="rd-navbar-nav-wrap">
+                          <!-- RD Navbar Nav-->
+                          <ul class="rd-navbar-nav">
+                            <li><a href=".././">Getting Started</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#system-requirements">System Requirements</a></li>
+                                <li><a href="#package-structure">Package structure</a></li>
+                                <li><a href="#installation">Installation</a></li>
+                                <li><a href="#web-server-requirements">Web Server Requirements</a></li>
+                                <li><a href="#authorization">Authorization</a></li>
+                              </ul>
+                            </li>
+                            <li class="active opened"><a href="features.html">Features</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#page-manager">Page Manager</a></li>
+                                <li><a href="#page-settings">Page Settings</a></li>
+                                <li><a href="#design-mode">Design Mode</a></li>
+                                <li><a href="#edit-mode">Edit Mode</a></li>
+                                <li><a href="#preview-mode">Preview Mode</a></li>
+                                <li><a href="#configuration-layer-tool">Configuration (Layer tool)</a></li>
+                                <li><a href="#presets-tool">Presets tool</a></li>
+                                <li><a href="#content-editor-basic-tools">Content Editor (basic tools)</a></li>
+                                <li><a href="#drag-and-drop-tool">Drag and Drop tool</a></li>
+                                <li><a href="#text-editor">Text Editor</a></li>
+                                <li><a href="#code-editor">Code Editor</a></li>
+                                <li><a href="#context-menu">Context menu</a></li>
+                                <li><a href="#media-library">Media library</a></li>
+                                <li><a href="#icons-manager">Icons manager</a></li>
+                                <li><a href="#resolution-preview-tool">Resolution preview tool</a></li>
+                                <li><a href="#export">Export</a></li>
+                                <li><a href="#import">Import</a></li>
+                                <li><a href="#publication">Publication</a></li>
+                                <li><a href="#multilanguage">Multilanguage</a></li>
+                                <li><a href="#style-manager">Style Manager</a></li>
+                                <li><a href="#updater">Updater</a></li>
+                                <li><a href="#hotkeys">Hotkeys</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="plugins.html">Plugins</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#plugins-overview">Plugins Overview</a></li>
+                                <li><a href="#background-image-plugin">Background Image Plugin</a></li>
+                                <li><a href="#background-plugin">Background Plugin</a></li>
+                                <li><a href="#image-plugin">Image Plugin</a></li>
+                                <li><a href="#iframe-plugin">Iframe Plugin</a></li>
+                                <li><a href="#link-plugin">Link Plugin</a></li>
+                                <li><a href="#material-parallax-plugin">Material Parallax Plugin</a></li>
+                                <li><a href="#label-plugin">Label Plugin</a></li>
+                                <li><a href="#countdown-plugin">Countdown Plugin</a></li>
+                                <li><a href="#google-map-plugin">Google Map Plugin</a></li>
+                                <li><a href="#icons-plugin">Icons Plugin</a></li>
+                                <li><a href="#owl-carousel-plugin">Owl Carousel Plugin</a></li>
+                                <li><a href="#campaign-monitor-plugin">Campaign Monitor Plugin</a></li>
+                                <li><a href="#mailchimp-plugin">Mailchimp Plugin</a></li>
+                                <li><a href="#rd-mailform-plugin">RD Mailform Plugin</a></li>
+                                <li><a href="#rd-instagram-feed-plugin">RD Instagram Feed Plugin</a></li>
+                                <li><a href="#rd-twitter-feed-plugin">RD Twitter Feed Plugin</a></li>
+                                <li><a href="#camera-slider-plugin">Camera Slider Plugin</a></li>
+                                <li><a href="#swiper-slider-plugin">Swiper Slider Plugin</a></li>
+                                <li><a href="#vide-plugin">Vide Plugin</a></li>
+                                <li><a href="#lightgallery-plugin">Lightgallery Plugin</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="import-template-step-by-step.html">Import Template <br> (Step by Step)</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#builder-setup">Builder Setup</a></li>
+                                <li><a href="#template-import-preparation">Template Import Preparation</a></li>
+                                <li><a href="#preparing-scripts-for-working-with-builder">Preparing Scripts for Working with Builder</a></li>
+                                <li><a href="#preparing-styles-for-working-with-builder">Preparing Styles for Working With Builder</a></li>
+                                <li><a href="#preparing-html-markup-for-working-with-builder">Preparing HTML Markup for Working with Builder</a></li>
+                                <li><a href="#project-setup">Project Setup</a></li>
+                                <li><a href="#project-preparation-for-use">Project Preparation for Use</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="video-tutorials.html">Video Tutorials</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#vt--novi-builder-membership">Novi Builder Membership</a></li>
+                                <li><a href="#vt--owl-carousel-plugin">Owl Carousel Plugin</a></li>
+                                <li><a href="#vt--google-maps-plugin">Google Maps Plugin</a></li>
+                                <li><a href="#vt--publish-import-export">Publish, Import, Export</a></li>
+                                <li><a href="#vt--gallery-plugin">Gallery Plugin</a></li>
+                                <li><a href="#vt--replace-images">Replace Images</a></li>
+                                <li><a href="#vt--swiper-slider-plugin">Swiper Slider Plugin</a></li>
+                                <li><a href="#vt--replace-icon">Replace Icon</a></li>
+                                <li><a href="#vt--text-editor">Text Editor</a></li>
+                                <li><a href="#vt--working-with-presets">Working with Presets</a></li>
+                                <li><a href="#vt--modes-overview">Modes Overview</a></li>
+                                <li><a href="#vt--editing-links">Editing Links</a></li>
+                                <li><a href="#vt--page-manager-overview">Page Manager Overview</a></li>
+                                <li><a href="#vt--introduction-to-interface">Introduction to Interface</a></li>
+                                <li><a href="#vt--create-you-custom-html-website">Create you custom HTML website</a></li>
+                                <li><a href="#vt--developer-tools">Developer Tools</a></li>
+                                <li><a href="#vt--visual-page-editor">Visual Page Editor</a></li>
+                                <li><a href="#vt--import-any-existing-website">Import any existing website</a></li>
+                                <li><a href="#vt--use-case-tools">Use Case Tools</a></li>
+                                <li><a href="#vt--preset-building-tools">Preset Building Tools</a></li>
+                                <li><a href="#vt--publish-and-export">Publish and Export</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="cell-sm-8">
+              <div class="main-section-inner">
+                <div id="features" data-type="anchor">
+                  <div class="main-title">
+                    <h2>Features</h2>
+                  </div>
+                  <hr>
+                </div>
+                <div id="page-manager" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Page Manager</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to add a page</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Press "Open page manager", which will appear on hovering over the breadcrumbs to the right of Novi logo.</li>
+                        <li>Press "Add new page" on the appeared panel.</li>
+                        <li>Enter the page name and press "Create page".</li>
+                      </ul>
+                      <p>To save changes done to the project, you need to press the "Save changes" button, located in the upper right part of the interface.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to switch a page</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>Novi interface:</p>
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Press "Open page manager", which will appear on hovering over the breadcrumbs to the right of Novi logo.</li>
+                        <li>Select the proper page by pressing LMB on the appeared panel.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to delete a page</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Press "Open page manager", which will appear on hovering over the breadcrumbs to the right of Novi logo.</li>
+                        <li>Press "Delete" on the appeared panel.</li>
+                      </ul>
+                      <p>To save changes done to the project, you need to press the "Save changes" button, located in the upper right part of the interface.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to duplicate a page</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Press "Open page manager", which will appear on hovering over the breadcrumbs to the right of Novi logo.</li>
+                        <li>Press "Duplicate" on the appeared panel.</li>
+                      </ul>
+                      <p>To save changes done to the project, you need to press the "Save changes" button, located in the upper right part of the interface.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to add the page preview</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Press "Open page manager", which will appear on hovering over the breadcrumbs to the right of Novi logo.</li>
+                        <li>Press "Upload preview" on the appeared panel.</li>
+                        <li>Choose a necessary file from media library and upload a new file. You can find out more about all media library features in the "Media Library" section.</li>
+                        <li>Press "Insert Image"</li>
+                      </ul>
+                      <p>To save changes done to the project, you need to press the "Save changes" button, located in the upper right part of the interface.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="page-settings" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Page Settings</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Page settings will be applied only to the page, opened in the visual editor at the moment.</p>
+                      <ul class="list-ordered">
+                        <li>Trigger for the current page settings display</li>
+                        <li>Page name - page title</li>
+                        <li>File name – HTML-file name of the page (automatically generated from the page title)</li>
+                        <li>Use as home page - set the current page as ‘front’ one</li>
+                        <li>Favicon - and option to upload the favicon of the website</li>
+                        <li>Page’s metadata</li>
+                      </ul>
+                      <p class="text-italic text-success">* When saving settings (in case the page name was modified), all URL links of the project will be replaced with the "File name" value (including presets).<br>* The "Save Changes" button may be unavailable if the "File name" field is filled incorrectly (e.g. an invalid HTML-file name or a duplicate of an existing file name)</p><a class="gallery-item" data-lightgallery="item" href="../images/page-settings-1200x675.jpg"><img src="../images/page-settings-1200x675.jpg" alt="" width="1200" height="675"/></a>
+                      <p>Press the "Save changes" button after you’re done with the settings. Then save the project by pressing the "Save project" button.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="design-mode" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Design Mode</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>This mode is mainly intended for developers. It provides you with the following options:</p>
+                      <ul class="list-marked">
+                        <li>Configure the builder’s plugins</li>
+                        <li>Edit the source code of the page (HTML, CSS, JS) with the help of the code editor tool</li>
+                        <li>Manage the project’s presets</li>
+                        <li>Manage the page’s content using the visual editor</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="edit-mode" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Edit Mode</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>This mode is mainly intended for the end-users. It allows you to use all the visual tools for the content editing, including the builder’s plugins. "Edit Mode" is the one that loads by default.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="preview-mode" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Preview Mode</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>This mode allows to preview your website.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="configuration-layer-tool" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Configuration (Layer tool)</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>You can access project settings by clicking "Configuration" entry in the main menu of builder's interface.</p>
+                      <ul class="list-ordered">
+                        <li>Categories of project settings.</li>
+                        <li>Categories of system settings.</li>
+                        <li>Area of specifying settings for a selected category.</li>
+                      </ul><a class="gallery-item" data-lightgallery="item" href="../images/settings-all-1000x500.jpg"><img src="../images/settings-all-1000x500.jpg" alt="" width="1000" height="500"/></a>
+                      <p>Project settings include the following:</p>
+                      <ul class="list-marked">
+                        <li>"General", including:
+                          <ul class="list-marked">
+                            <li>Project Name – the name of the project.</li>
+                            <li>Image directory path – the path to the directory with project images.</li>
+                            <li>Video directory path  - the path to the directory with project video files.</li>
+                            <li>Font directory path  - the path to the directory with project fonts.</li>
+                            <li>Style directory path - the path to the directory with styles.</li>
+                          </ul>
+                        </li>
+                        <li>"Publish", which allows changing the publishing path on your server where the builder is located. It also provides an option for enabling/disabling the confirmation of the path before publishing.</li>
+                        <li>"Google fonts" allows configuring Google fonts in your project. Please note that this setting is used in Novi's text editor. Here is how it works:</li>
+                      </ul><a class="gallery-item" data-lightgallery="item" href="../images/google-fonts.gif"><img src="../images/google-fonts.gif" alt=""/></a>
+                      <ul class="list-marked">
+                        <li>"File and Code Templates" allow you to change the basic markup of a new page as well as page container.</li>
+                        <li> "Project Layers" includes layer system settings.</li>
+                      </ul>
+                      <p>In system settings, the "General" tab includes:</p>
+                      <ul class="list-marked">
+                        <li>Show tips on startup - indicates if it is necessary to display the initial presentation when at builder's startup.</li>
+                        <li>Check for Updates - indicates if it is required to check builder's updates (available since version 0.8.3).</li>
+                        <li>Language - a selector for choosing the builder's interface language.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Layer creating rules</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To detect the user's interaction with the project layout elements, Novi uses the layer system. A layer is a rule, which defines the logical group of layout elements for manipulations in the visual editor (dragging, pasting, deleting, duplicating, transporting, and others).You can also manipulate any page elements disregarding layers as described in “Extending the features of working with elements”.</p>
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/VBeRU4lAXIw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to add/change a layer</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To add a layer, you need to:</p>
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Open the main menu (press the Novi Builder logo icon) located in the upper left corner of the interface.</li>
+                        <li>Select "Configuration".</li>
+                        <li>In the "Project Layers" section, press "+" in the bottom of the table.</li>
+                        <li>Fill in the fields according to the "Rules of creating layers" section.</li>
+                        <li>Press "Save changes".</li>
+                      </ul>
+                      <p>To save changes done to the project, you need to press the "Save changes" button, located in the upper right part of the interface.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Rules of creating layers</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>When creating layers, you need to enter the following parameters:</p>
+                      <ul class="list-marked">
+                        <li>Name – a name, which will be displayed on hovering over an element in the visual editor.</li>
+                        <li>Element – a CSS selector that defines the logical group, to which this rule applies.</li>
+                        <li>Can be inserted to – a CSS selector determining an area of manipulations with the logical group.</li>
+                      </ul>
+                      <p>Example of layer usage <br>
+                        Let's take as an example an empty project without any layers. After entering the "Edit mode", you don't have the ability to interact with layout elements, and you need to add a layer.
+                      </p>
+                      <p>Create a layer according to the paragraph "How to add or change a layer" with the following parameters:</p>
+                      <ul class="list-marked">
+                        <li>Name - Section</li>
+                        <li>Element - .section</li>
+                        <li>Can be inserted to - body</li>
+                      </ul>
+                      <p>Thus, a layer called "Section" is created, which will contain all elements of HTML layout with .section class. All manipulations (dragging, adding etc.) will be happening in the context of its parent - <body>.</p>
+                      <p>After saving the layer in "Edit mode" (when elements with .section class are present on the target page), and while hovering over the layout element, which corresponds to the created layer, for example:</p>
+                      <pre>&lt;section class="section"&gt;
+...
+&lt;/section&gt;</pre>
+                      <p>an editor panel will be shown with options of dragging, duplicating, and deleting.</p>
+                      <p>The area of dragging, in this case, will be limited to the "body" tag listed in the parameters of Section layer, i.e. you will not be able to move an element with .section class outside the borders of <body>, for example to <footer>.</p>
+                      <p>Also if there are saved presets in the project (how to work with them is described in the "Working with Presets" section), after hovering over an area where presets (HTML code specified in them) can be applied according to layers, a module of adding presets will be displayed.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Extending the features of working with elements</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>Novi uses the layer system for visual editing of elements. <br>If you need to edit elements that are not described in the layer system, you can use Ctrl button in Windows OS or Cmd in Mac OS.</p>
+                      <p>When this key is pressed, you get access to all elements of the current page. Let us consider the following example:</p><a class="gallery-item" data-lightgallery="item" href="../images/example-395x160.jpg"><img src="../images/example-395x160.jpg" alt="" width="395" height="160"/></a>
+                      <p>Here we need to place a button before the text.</p>
+                      <p>If “Design Mode” is enabled, then:</p>
+                      <ul class="list-marked">
+                        <li>Press and hold Ctrl on Windows OS or Cmd on Mac OS</li>
+                        <li>Select the button by clicking LMB</li>
+                        <li>Click and hold LMB on the appeared panel</li>
+                      </ul><a class="gallery-item" data-lightgallery="item" href="../images/example1-387x155.jpg"><img src="../images/example1-387x155.jpg" alt="" width="387" height="155"/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Extending the features of working with elements</h6>
+                    </div>
+                    <div class="box-content"><a class="gallery-item" data-lightgallery="item" href="../images/example2-391x173.jpg"><img src="../images/example2-391x173.jpg" alt="" width="391" height="173"/></a>
+                      <p>Release LMB and Ctrl on Windows OS or Cmd on Mac OS <br> If “Edit Mode” is enabled:</p>
+                      <ul class="list-marked">
+                        <li>Press and hold Ctrl on Windows OS or Cmd on Mac OS, then hover over a button</li>
+                        <li>Click and hold LMB on the icon<img src="../images/example3-24x24.jpg" alt="" width="24" height="24"/>of the appeared panel
+                        </li>
+                      </ul><a class="gallery-item" data-lightgallery="item" href="../images/example4-381x150.jpg"><img src="../images/example4-381x150.jpg" alt="" width="381" height="150"/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Placing an element before the text area</h6>
+                    </div>
+                    <div class="box-content"><a class="gallery-item" data-lightgallery="item" href="../images/example5-409x164.jpg"><img src="../images/example5-409x164.jpg" alt="" width="409" height="164"/></a>
+                      <p>Release LMB and Ctrl on Windows OS or Cmd on Mac OS.</p>
+                      <p>Please pay your attention! This method allows you to manipulate any layout elements. Follow the rules of HTML code validity and semanticity.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="presets-tool" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Presets tool</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>
+                         A preset is a separate independent part of an HTML page. Actually, it is a set of HTML tags with its own structure, CSS classes, and nesting. Any part of HTML page may act as a preset but for the convenience, it is better to store independent components of a page in presets, for example, a banner, a section, a form, a column, a sidebar etc. You can learn more about working with presets in this section below. <br>
+                        Before starting to work with presets, we recommend you to read the section "Rules of creating layers".
+                      </p>
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/OsRSimB5B-I" frameborder="0" allowfullscreen></iframe>
+                      <p>Presets panel includes the following items:</p>
+                      <ul class="list-ordered">
+                        <li>Developer’s panel</li>
+                        <li>‘Create a preset’ option</li>
+                        <li>Existing presets list</li>
+                        <li>Presets categories and a search bar</li>
+                      </ul><a class="gallery-item" data-lightgallery="item" href="../images/add-content-0.9.0.gif"><img src="../images/add-content-0.9.0.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to create a preset</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>There are 2 ways of creating a preset:</p>
+                      <ul class="list-marked">
+                        <li>Create a preset using the preset panel</li>
+                        <li>Use the context menu of visual editor</li>
+                      </ul>
+                      <p>In the first case you need to:</p>
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Go to the "Design Mode" by pressing a proper button in the middle of the upper panel.</li>
+                        <li>Open the bottom panel by pressing "Presets".</li>
+                        <li>On the appeared panel, press "Add new preset".</li>
+                        <li>Fill in the fields as shown in the paragraph "How to correctly set the parameters when creating a preset" of this section.</li>
+                        <li>Press "Save preset".</li>
+                      </ul>
+                      <p>In the second case:</p>
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Go to the "Design Mode" by pressing a proper button in the middle of the upper panel.</li>
+                        <li>Select the necessary area.</li>
+                        <li>Open the context menu by pressing RMB.</li>
+                        <li>Choose "Save as preset".</li>
+                        <li>Fill in the fields as shown in the paragraph "How to correctly set the parameters when creating a preset" of this section.</li>
+                        <li>Press "Save preset".</li>
+                      </ul>
+                      <p>In the first case, you need to set the preset layout. In the second case, the layout will be taken from the element you selected in the "HTML Code" text field.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to correctly set the parameters when creating a preset</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>
+                         In the "Preset name" field, specify the preset name.[#br]
+                        You also need to specify keywords in the "Keywords" field that allows finding the proper preset. We recommend you to state the preset keys relying on the content written in them. For example, the section with our clients will have the key named "Clients" or "Partners".
+                      </p>
+                      <p>The text area "HTML Code" displays the HTML code, which will be inserted into the selected page after the preset is applied.</p>
+                      <p>Checkbox "Deploy on preset insertion" defines whether the page will be reloaded when the preset is inserted.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to add a preset preview</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Go to the "Design Mode" by pressing a proper button in the middle of the upper panel.</li>
+                        <li>Open the bottom panel by pressing "Presets".</li>
+                        <li>On the appeared panel, select "Upload preview" from the context menu of the target preset.</li>
+                        <li>Choose a necessary file from media library and upload a new file. You can find out more about all media library features in the "Media Library" section.</li>
+                        <li>Press "Insert Image"</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to edit a preset</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Open the builder page.</li>
+                        <li>Go to the "Design Mode" by pressing a proper button in the middle of the upper panel.</li>
+                        <li>Open the bottom panel by pressing "Presets".</li>
+                        <li>On the appeared panel, select "Edit" from the context menu of the target preset.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to duplicate a preset</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Open the builder page</li>
+                        <li>Go to the "Design Mode" by pressing a proper button in the middle of the upper panel.</li>
+                        <li>Open the bottom panel by pressing "Presets".</li>
+                        <li>On the appeared panel, select "Duplicate" from the context menu of the target preset.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to delete a preset</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Open the builder page</li>
+                        <li>Go to the "Design Mode" by pressing a proper button in the middle of the upper panel.</li>
+                        <li>Open the bottom panel by pressing "Presets".</li>
+                        <li>On the appeared panel, select "Delete" from the context menu of the target preset.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Adding the preset to the page</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>There are 2 ways to add a preset to the page:</p>
+                      <ul class="list-marked">
+                        <li>With the help of the preset panel.</li>
+                        <li>Using the preset insertion module.</li>
+                      </ul>
+                      <p>In the first case you need to:</p>
+                      <ul class="list-marked">
+                        <li>Open the builder page</li>
+                        <li>Go to the "Design Mode" by pressing a proper button in the middle of the upper panel.</li>
+                        <li>Open the bottom panel by pressing "Presets".</li>
+                        <li>On the appeared panel, find the necessary preset.</li>
+                        <li>Drag the preset into the visual editor area by holding LMB, therewith the area of insertion will be highlighted by a solid blue line.</li>
+                        <li>In the second case:</li>
+                        <li>Open the builder page</li>
+                        <li>Go to the "Edit Mode" by pressing a proper button in the middle of the upper panel.</li>
+                        <li>Hover over the area where you need to add the preset.</li>
+                        <li>If the preset is present and if it meets the layer rules, "+" will be displayed, press it.</li>
+                        <li>Select a necessary preset in the appeared dialogue window.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="content-editor-basic-tools" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Content Editor (basic tools)</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>You can use the page editing tools only on the items located on the visual editor working area  (see the "Overview" section). Access to the items in the visual editor area is defined at the project’s layers system settings (see the "Configuration" section).</p>
+                      <p>The basic content editing operations available at the visual editor are the following:</p>
+                      <ul class="list-marked">
+                        <li>Removing</li>
+                        <li>Pasting from a preset</li>
+                        <li>Duplicating</li>
+                        <li>Replacing</li>
+                      </ul>
+                      <p>All of these options are available on the item hover - just place the mouse cursor on the item in the visual editor.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Removing the content</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>Hover the target item in order to delete some of the page’s content and press the "Remove layer" button.</p><a class="gallery-item" data-lightgallery="item" href="../images/ezgif.com-video-to-gif (2).gif"><img src="../images/ezgif.com-video-to-gif (2).gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Pasting the content from a preset</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>Hover the target area in order to add some content from a preset. In case there is a preset, matching the layers adding rules requirements (listed in the "Configuration" section), you’ll see the ‘+’ icon. Press it and choose the preset among the list of the available ones.</p><a class="gallery-item" data-lightgallery="item" href="../images/ezgif.com-video-to-gif.gif"><img src="../images/ezgif.com-video-to-gif.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Duplicating the content</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>Hover the target item in order to duplicate some of the page’s content and press the "Duplicate layer" button.</p><a class="gallery-item" data-lightgallery="item" href="../images/ezgif.com-video-to-gif (3).gif"><img src="../images/ezgif.com-video-to-gif (3).gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Replacing the content</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>Hover the target area in order to replace some of the page’s content. In case there is a preset, matching the layers adding rules requirements (listed in the "Configuration" section), you’ll see the ‘Replace layer’ icon. Press it and choose the preset among the list of the available ones.</p><a class="gallery-item" data-lightgallery="item" href="../images/ezgif.com-video-to-gif (4).gif"><img src="../images/ezgif.com-video-to-gif (4).gif" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+                <div id="drag-and-drop-tool" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Drag & Drop tool</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>
+                         Drag & Drop Tool allows you to re-arrange the items within the visual editor area.<br>
+                        The items dragging rules are described in the Novi layers system in the "Configuration" section, the dragging area is specified at the Configuration under the ‘Page Container’.
+                      </p>
+                      <p>First, you should hover the target item within the visual editor area, click on the "Move Layer"  and then drag the item to any visual editor area keeping the left mouse button pressed. </p>
+                      <p>The areas, available for dragging will be pointed up  with the solid blue border line.</p><a class="gallery-item" data-lightgallery="item" href="../images/ezgif.com-video-to-gif (1).gif"><img src="../images/ezgif.com-video-to-gif (1).gif" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+                <div id="text-editor" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Text Editor</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Text editor allows you to edit the text within the visual editor area. <br>
+                        It has the following features:
+                      </p>
+                      <ul class="list-marked">
+                        <li>make text bold</li>
+                        <li>make text italic</li>
+                        <li>make text underlined</li>
+                        <li>change text alignment</li>
+                        <li>change text case</li>
+                        <li>add a link to the text</li>
+                        <li>change text color</li>
+                        <li>change font size</li>
+                        <li>change vertical spacing</li>
+                        <li>change text font</li>
+                        <li>change the line height</li>
+                        <li>change the letter spacing</li>
+                      </ul>
+                      <p>When a feature cannot be applied to a certain text fragment (e.g. text alignment), a corresponding icon of the editor will be disabled (displayed in a dark color).</p><a class="gallery-item" data-lightgallery="item" href="../images/ezgif.com-video-to-gif (5).gif"><img src="../images/ezgif.com-video-to-gif (5).gif" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+                <div id="code-editor" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Code Editor</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Novi code editor is available in the design mode only.</p>
+                      <p>You may find the list of its features below:</p>
+                      <ul class="list-marked">
+                        <li>Enables the source code editing (HTML, CSS and JS) </li>
+                        <li>Is fully compatible with Emmet</li>
+                        <li>Includes the HTML, CSS validation by default</li>
+                        <li>Applies your edits right away when the "Autodeploy" is enabled</li>
+                        <li>Provides an option to switch between all the HTML, CSS, JS files used on the target page</li>
+                        <li>Highlights the source code of the items in the code editor when you press on them with the left mouse button in the visual editor for the intuitive navigation on the HTML code.</li>
+                      </ul>
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/pf2yHngT4AU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div id="context-menu" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Context menu</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Context menu allows you to manage the items in the visual editor.<br>
+                        A set of the operations performed with the help of the context menu depends on the current Novi mode.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Context menu in the "Edit mode"</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>Context menu in the "Edit mode" allows you to do the following:</p>
+                      <ul class="list-marked">
+                        <li>Cut an item</li>
+                        <li>Copy an item</li>
+                        <li>Paste before, within or after the selected item</li>
+                        <li>Remove an item</li>
+                        <li>Duplicate an item</li>
+                        <li>Check the source code of the item</li>
+                      </ul>
+                      <p>In order to cut the item you should hover it with the mouse cursor, click on it with the right mouse button and choose the "Cut" operation in the context menu.</p>
+                      <p>In order to copy the item you should hover it with the mouse cursor, click on it with the right mouse button and choose the "Copy" operation in the context menu.</p>
+                      <p>In order to paste the item that was previously cut or copied you should hover the target area with the mouse cursor, click on it with the right mouse button and choose the "Paste" operation in the context menu. You’ll also need to specify the place to insert the item.</p>
+                      <p>In order to remove the item you should hover it with the mouse cursor, click on it with the right mouse button and choose the "Delete" operation in the context menu.</p>
+                      <p>In order to clone the item you should hover it with the mouse cursor, click on it with the right mouse button and choose the "Duplicate" operation in the context menu.</p>
+                      <p>In order to check the source code of the item you should hover it with the mouse cursor, click on it with the right mouse button and choose the "Source Code" operation in the context menu. Builder will switch to the Design mode and the item’s source code will be highlighted in the code editor.</p>
+                      <p>Below you may find an example of using the visual editor context menu:</p><a class="gallery-item" data-lightgallery="item" href="../images/ezgif.com-video-to-gif (6).gif"><img src="../images/ezgif.com-video-to-gif (6).gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Context menu in the "Design mode"</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>The context menu of the Novi "Design mode" is an extended version of the one, available in the  "Edit mode".</p>
+                      <p>The additional options are the following:</p>
+                      <ul class="list-marked">
+                        <li>Select the parent item</li>
+                        <li>Save the item as a preset</li>
+                      </ul>
+                      <p>Below you may find an example of using the visual editor context menu in the Design mode:</p><a class="gallery-item" data-lightgallery="item" href="../images/ezgif.com-video-to-gif (7).gif"><img src="../images/ezgif.com-video-to-gif (7).gif" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+                <div id="media-library" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Media library</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Media library contains all the graphic files that are used in the template. It allows you to easily add and delete all graphic and video files of the project.</p>
+                      <p>To access the media library use the main Novi Builder menu.</p>
+                      <p>Media library looks the following way:</p>
+                      <ul class="list-ordered">
+                        <li>category panel, 3 categories are reserved by Novi ("Show all", "Images Only", "Videos Only");</li>
+                        <li>custom project categories;</li>
+                        <li>button for adding custom categories;</li>
+                        <li>media panel;</li>
+                        <li>media upload panel;</li>
+                        <li>context menu of the media panel.</li>
+                      </ul>
+                      <p><i>* Custom categories are those that were created by the user. Custom categories support the following functionality:</i></p>
+                      <ul class="list-marked">
+                        <li>changing category name;</li>
+                        <li>category media cleanup;</li>
+                        <li>category removal;</li>
+                        <li>adding media files to the category.</li>
+                      </ul><a class="gallery-item" data-lightgallery="item" href="../images/media-library-1200x600.jpg"><img src="../images/media-library-1200x600.jpg" alt="" width="1200" height="600"/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to add media files to the library</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>There are several ways of adding a file to the media library. In the first one you need to:</p>
+                      <ul class="list-marked">
+                        <li>open the main menu of the Novi Builder;</li>
+                        <li>choose "Media Library" item;</li>
+                        <li>press the "Upload Files" button;</li>
+                        <li>select a file, press the "Upload" button.</li>
+                      </ul>
+                      <p>The second one is available only if an active media library category is empty. In this case, you can drag the files from your computer's file system to the media files panel shown on the image above. The whole panel will also offer an option of uploading files from the file system.</p>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p>
+                      <p><i>*When you’re uploading a new file to the media gallery, it's added to the currently active category, except for the case of uploading a video file when the active category is "Images Only" and vice versa.</i></p><a class="gallery-item" data-lightgallery="item" href="../images/add-media-files.gif"><img src="../images/add-media-files.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to crop an image in media library</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To crop an image in the media library, you should:</p>
+                      <ul class="list-marked">
+                        <li>open the media library;</li>
+                        <li>call the context menu of the target file by right-clicking the file;</li>
+                        <li>choose the "Crop Image" item;</li>
+                        <li>select the needed area;</li>
+                        <li>press the "Crop image" button.</li>
+                      </ul><a class="gallery-item" data-lightgallery="item" href="../images/novi-media-crop-tool-0.9.0.gif"><img src="../images/novi-media-crop-tool-0.9.0.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to reduce an image in the media library</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To reduce an image in the media library, you need to:</p>
+                      <ul class="list-marked">
+                        <li>open media library</li>
+                        <li>click RMB on the target file to open the context menu.</li>
+                        <li>select "Reduce Image".</li>
+                        <li>specify the required size using the scroll box or inputs.</li>
+                        <li>press "Apply". If you need to change a copy of the original image, set the check mark "Copy original image" in active state.</li>
+                      </ul><a class="gallery-item" data-lightgallery="item" href="../images/resize-image.gif"><img src="../images/resize-image.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to delete files from the media library</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To delete files from the media library you should:</p>
+                      <ul class="list-marked">
+                        <li>open the media library;</li>
+                        <li>choose the needed file(s) (the library supports multiple selection with Ctrl or Shift);</li>
+                        <li>call the context menu of the selected file(s) by pressing right mouse button;</li>
+                        <li>choose the "Delete file completely" item.</li>
+                      </ul>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p><a class="gallery-item" data-lightgallery="item" href="../images/delete file completetly.gif"><img src="../images/delete file completetly.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to add a media file to the category</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To add a media file to the category, you should:</p>
+                      <ul class="list-marked">
+                        <li>open the media library;</li>
+                        <li>choose the necessary file(s) (media library supports multiple selection with Ctrl or Shift);</li>
+                        <li>press the right mouse button, drag file(s) to the target category name area.</li>
+                      </ul>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p><a class="gallery-item" data-lightgallery="item" href="../images/add file to category.gif"><img src="../images/add file to category.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to remove a media file from a category</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To remove a media file from a category, you should:</p>
+                      <ul class="list-marked">
+                        <li>open the media library;</li>
+                        <li>select a custom category;</li>
+                        <li>select the needed file(s) (media library supports multiple selection with Ctrl or Shift);</li>
+                        <li>call the context menu of the selected file(s) by pressing right mouse button;</li>
+                        <li>choose the "Delete file from category" item for the target file(s).</li>
+                      </ul>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p><a class="gallery-item" data-lightgallery="item" href="../images/remove-file-from-category.gif"><img src="../images/remove-file-from-category.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to add a category to media library</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To add a category to the library, you should:</p>
+                      <ul class="list-marked">
+                        <li>Open the media library;</li>
+                        <li>Press the "Add new Category" button.</li>
+                      </ul>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p><a class="gallery-item" data-lightgallery="item" href="../images/add-category.gif"><img src="../images/add-category.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to remove a category from media library</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To remove a category from media library, you should:</p>
+                      <ul class="list-marked">
+                        <li>open the media library;</li>
+                        <li>select the needed custom category;</li>
+                        <li>call the context menu of the selected category by right-clicking it;</li>
+                        <li>select the "Delete category" item.</li>
+                      </ul>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p><a class="gallery-item" data-lightgallery="item" href="../images/remove-category.gif"><img src="../images/remove-category.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to rename a category</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To rename a category, you should:</p>
+                      <ul class="list-marked">
+                        <li>open the media library;</li>
+                        <li>select the needed custom category;</li>
+                        <li>call the context menu of the selected category by right-clicking or double-clicking the left mouse button on the category name;</li>
+                        <li>choose the "Rename category" item, enter the needed name, press Enter.</li>
+                      </ul>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p><a class="gallery-item" data-lightgallery="item" href="../images/rename category.gif"><img src="../images/rename category.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to delete media files from the category</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To delete all media files from the category, you should:</p>
+                      <ul class="list-marked">
+                        <li>open the media library;</li>
+                        <li>select the needed custom category;</li>
+                        <li>call the context menu of the selected category by right-clicking it;</li>
+                        <li>choose the "Clear category" item.</li>
+                      </ul>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p><a class="gallery-item" data-lightgallery="item" href="../images/clear-category.gif"><img src="../images/clear-category.gif" alt=""/></a>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to upload project files to the media gallery</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>To upload project files to the media gallery, you need to:</p>
+                      <ul class="list-marked">
+                        <li>open Media Library</li>
+                        <li>
+                          press "Upload project files"
+                          &nbsp;<img src="../images/import-project-files-40x40.jpg" alt="" width="40" height="40"/>
+                        </li>
+                        <li>in the opened modal window check the paths to project files and after that press "Import". If the paths are inappropriate, you need to click "Change directory path" and replace them with the correct ones in the corresponding fields "Image directory path:" and "Video directory path:"</li>
+                      </ul>
+                      <p>To save changes, use the "Save" button that resides in the right corner of the top bar.</p><a class="gallery-item" data-lightgallery="item" href="../images/media-import-project-items.gif"><img src="../images/media-import-project-items.gif" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+                <div id="icons-manager" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Icons manager</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>This tool provides you with an option to manage the project's iconic fonts. By default, the builder has 7 popular iconic fonts available for use:</p>
+                      <ul class="list-marked">
+                        <li>FontAwesome</li>
+                        <li>Material Design Icons</li>
+                        <li>Material Icons by Google</li>
+                        <li>Flat Icons Bigmug Line</li>
+                        <li>Flat Icons Budicons Launch</li>
+                        <li>Flat Icons Budicons Free</li>
+                        <li>GlyphIcons Halflings</li>
+                      </ul>
+                      <p>Use the main Novi Builder menu to reach the icons manager.</p>
+                      <p>Icons manager looks the following way:</p>
+                      <ul class="list-ordered">
+                        <li>Select option to choose the font family (among the 7 basic font families, included by default).</li>
+                        <li>Search field to search within the selected font family.</li>
+                        <li>Output area of the selected iconic fonts.</li>
+                        <li>Button to upload the archive of a custom iconic font.</li>
+                      </ul><img src="../images/icon-manager-1200x600.jpg" alt="" width="1200" height="600"/>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to add a custom font to the builder project</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>In order to add a custom iconic font to the project, perform the following steps:</p>
+                      <ul class="list-marked">
+                        <li>Open the icons manager, it can be reached from the main builder menu.</li>
+                        <li>Click the "Upload icon Pack" button</li>
+                        <li>Browse your font archive. It should meet the requirements, listed in the "Creating an archive for an iconic font import" section.</li>
+                        <li>Import the font and save the changes by pressing the Save Project button in the top right corner of the main builder panel.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Creating an archive for an iconic font import</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>You should prepare the font archive to successfully import the font into the builder. It has to comply with the following rules:</p>
+                      <ul class="list-ordered">
+                        <li>The archive should not include parent directories for the files.
+                          <ul class="list-marked">
+                            <li>Incorrect:
+                              <ul class="list-marked">
+                                <li>font-awesome.zip
+                                  <ul class="list-marked">
+                                    <li>font-awesome
+                                      <ul class="list-marked">
+                                        <li>font-awesome.css</li>
+                                        <li>fonts
+                                          <ul class="list-marked">
+                                            <li>FontAwesome.otf</li>
+                                            <li>fontawesome-webfont.eot</li>
+                                            <li>fontawesome-webfont.ttf</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>Correct:
+                              <ul class="list-marked">
+                                <li>font-awesome.zip
+                                  <ul class="list-marked">
+                                    <li>font-awesome.css</li>
+                                    <li>FontAwesome.otf</li>
+                                    <li>fontawesome-webfont.eot</li>
+                                    <li>fontawesome-webfont.ttf</li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>The archive must have a CSS font file.</li>
+                        <li>The CSS font file has to contain a @font-face rule with all the references to font files and font-family property specified.</li>
+                        <li>The CSS font file has to contain a set of classes to define the icons.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Replacing the icon in a project</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>You should use the icons replacement plugin to change the icons within the project. The detailed description of the plugin is available at the Icons plugin section, under the Plugins.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="resolution-preview-tool" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Resolution Preview Tool</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>You can find the resizer tool at the main Novi interface. It can be used for previewing the visual editor on the different screen sizes.</p>
+                      <p>Resizer has 7 different dimensions, by default the “Desktop Full-HD” is active. There are also the following dimensions available:</p>
+                      <ul class="list-marked">
+                        <li>Mobile Portrait  320x480 px</li>
+                        <li>Mobile Landscape 480x320 px</li>
+                        <li>Tablet Portrait 768x1024 px</li>
+                        <li>Tablet Landscape 1024x768 px</li>
+                        <li>Notebook 1280x720 px</li>
+                        <li>Desktop PC 1600x900 px</li>
+                      </ul>
+                      <p>Keep in mind, the resizer shows your project on the different screen sizes, but it does not emulate the devices. Therefore, in certain cases the resulting display might differ on the real devices.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="export" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Export</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Template Export</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>
+                        Template export in Novi Builder is available in the main menu of the interface, "Export", "Export Template" items.Export allows to save a ZIP-archive in a chosen place. The template structure will be fully preserved.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Project Export</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>
+                        Project export in Novi Builder is available from the main menu of the interface, "Export", "Export Project" items.Export allows to save a ZIP-archive in a chosen place. The project structure will be fully preserved.</p>
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/8waOIijDHMI" frameborder="0" allowfullscreen> </iframe>
+                    </div>
+                  </div>
+                </div>
+                <div id="import" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Import</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>The feature of project and template import has been added to the builder.</p>
+                      <p>When working with a big project (the size depends on your server's settings, post_max_size and upload_max_filesize parameters) or template, we recommend you to increase the values of post_max_size and upload_max_filesize parameters in the settings file of PHP.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Project Import</h6>
+                    </div>
+                    <div class="box-content">
+                      <p><strong>Preparing for project import</strong></p>
+                      <p>Before importing your project it is necessary to build a proper archive (if the archive is built by the builder during export, it fits all requirements written below).</p>
+                      <p>Novi project has the following structure by default: </p>
+                      <ul class="list-marked">
+                        <li>template – a project folder</li>
+                        <li>.novi – a optional folder, contains media gallery files and page previews.</li>
+                        <li>bat – a folder with php scripts of the project</li>
+                        <li>css – a folder with project styles</li>
+                        <li>elements – an optional folder, which contains project presets</li>
+                        <li>fonts – a folder with project fonts</li>
+                        <li>images – a folder with project pictures</li>
+                        <li>js - JS code of the project  </li>
+                        <li>index.html – HTML page of the project</li>
+                        <li>project.json – project configuration file </li>
+                      </ul>
+                      <p>To import your project, you need to prepare a ZIP-archive, which will include all content of template directory.</p>
+                      <p>
+                        <mark>Attention! The archive must not include any additional parent directories.</mark>
+                      </p>
+                      <p>Incorrect:
+                        <ul class="list-marked">
+                          <li>template.zip
+                            <ul class="list-marked">
+                              <li>template
+                                <ul class="list-marked">
+                                  <li>.novi</li>
+                                  <li>...</li>
+                                  <li>project.json</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </p>
+                      <p>Correct:</p>
+                      <ul class="list-marked">
+                        <li>template.zip
+                          <ul class="list-marked">
+                            <li>.novi</li>
+                            <li>...</li>
+                            <li>project.json</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>
+                        <mark>Attention! The archive's root folder must include at least one .html file and project.json file.</mark>
+                      </p>
+                      <p>Those pages that are not located in the archive's root folder will be unavailable for editing in the builder.</p>
+                    </div>
+                    <div class="box-content">
+                      <p><strong>Project Import</strong></p>
+                      <p>To import a project, open the main menu, select "Import", "Project Import".</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Template Import</h6>
+                    </div>
+                    <div class="box-content">
+                      <p><strong>Preparing for template import</strong></p>
+                      <p>Before importing your template it is necessary to build a proper archive (if the archive is built by the builder during export, it fits all requirements written below).</p>
+                      <ul class="list-marked">
+                        <li>The archive must not include additional parent folders.</li>
+                      </ul>
+                      <p>Incorrect:</p>
+                      <ul class="list-marked">
+                        <li>site.zip
+                          <ul class="list-marked">
+                            <li>site
+                              <ul class="list-marked">
+                                <li>images</li>
+                                <li>...</li>
+                                <li>index.html</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>Correct:</p>
+                      <ul class="list-marked">
+                        <li>site.zip
+                          <ul class="list-marked">
+                            <li>images</li>
+                            <li>...</li>
+                            <li>index.html</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>The archive's root folder must have at least one .html file, all pages that are not located in the root directory will be unavailable in the builder's page manager.</p>
+                      <p>Will be unavailable:</p>
+                      <ul class="list-marked">
+                        <li>site.zip
+                          <ul class="list-marked">
+                            <li>images</li>
+                            <li>css</li>
+                            <li>...</li>
+                            <li>pages
+                              <ul class="list-marked">
+                                <li>index.html</li>
+                                <li>...</li>
+                                <li>contact.html</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p>Will be available:</p>
+                      <ul class="list-marked">
+                        <li>site.zip
+                          <ul class="list-marked">
+                            <li>images</li>
+                            <li>css</li>
+                            <li>...</li>
+                            <li>index.html</li>
+                            <li>...</li>
+                            <li>contact.html</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="box-content">
+                      <p><strong>Template Import</strong></p>
+                      <p>To import a template, open the main menu, select "Import", "Template Import".</p>
+                      <p>Troubleshooting:</p>
+                      <ul class="list-ordered">
+                        <li>After importing a project/template and restarting the builder, I am suggested to perform it again.
+                          <ul class="list-marked">
+                            <li>You need to check the structure of you template/project for accordance with the requirements described in this section. </li>
+                            <li>In case of project import, you should validate the project configuration file, project.json</li>
+                          </ul>
+                        </li>
+                        <li>During the archive upload process, a critical error occurs.
+                          <ul class="list-marked">
+                            <li>We recommend to increase the value of post_max_size and upload_max_filesize parameters in php.ini</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="publication" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Publication</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Project publication is available from the main panel of Novi interface and will be done according to the path you have specified in the project settings, "Publish path" item.</p>
+                      <p>Publication can be currently carried out only within the server where Novi Builder is installed.</p>
+                      <p>Be attentive! Repeated publication will update your website's content only if the "Publishment path" attribute in the Project Settings remains unchanged.</p>
+                      <p>Before every publication you will be shown a confirmation window. You can disable this option in Project settings, Publish Settings item, "Disable confirmation before publishing."</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="multilanguage" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Multilanguage</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>A feature of language change was added to Novi Builder. To use it, you need to:</p>
+                      <ul class="list-marked">
+                        <li>Open the main menu</li>
+                        <li>Choose "Configuration".</li>
+                        <li>In the "System" category choose "General".</li>
+                        <li>Select a necessary option in "Change current application language:" dropdown list.</li>
+                      </ul>
+                      <p>You can also add a language for Novi interface.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>How to Add a Language for Novi Interface</h6>
+                    </div>
+                    <div class="box-content">
+                      <p>The Novi interface language data are presented in json format. All data for translation are stored in lang folder of Novi project.</p>
+                      <p>To add a translation, you need to:</p>
+                      <ul class="list-marked">
+                        <li>Create a translation file "en.json", where en is the language identifier.</li>
+                        <li>Add a json object to languages.json file with the following data:</li>
+                      </ul>
+                      <pre>"en": { - language identifier
+  "file": "en.json" – a path to the file with translation data created at the previous step.
+  "name": "English" – language name that will be displayed in system settings during language selection.
+}</pre>
+                      <p>Rules of filling the translation file ("en.json" file):</p>
+                      <ul class="list-marked">
+                        <li>All keys for translation have to be taken from blank.json file, which is included with given Novi Builder package (lang directory).</li>
+                        <li>You must not change key names or modify their nesting, otherwise your translation will not be displayed. в противном случае ваш перевод не будет отображен. For example, let's take a fragment of en.json file:</li>
+                      </ul>
+                      <pre>"editor": {
+  "replaceItem": {
+    "tooltip": "Your translation goes here"
+  }
+}</pre>
+                      <p>If anything in this listing is changed except "Your translation goes here", your translation will not be displayed in the builder.</p>
+                      <ul class="list-marked">
+                        <li>Translation values also use shortcodes for displaying of dynamic or reserved information. Shortcode looks as follows:</li>
+                      </ul>
+                      <p>"Go to #{errorLine} line", everything written between ", and " is the shortcode name. </p>
+                      <p>You can change the shortcode sequence in the line but you must not change its name, otherwise dynamic information will not be displayed.</p>
+                      <p>In case of incorrect filling or data skipping/deletion in the translation file, these data will be replaced with the translation from en.json file.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="style-manager" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Style manager</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Style Manager was added to Novi Builder in version 0.9.0. It allows editing the styles of your project.</p><a class="gallery-item" data-lightgallery="item" href="../images/style-manager-1-800x450.png"><img src="../images/style-manager-1-800x450.png" alt="" width="800" height="450"/></a>
+                      <p>It is located in the developer panel and looks as follows:</p><a class="gallery-item" data-lightgallery="item" href="../images/style-manager-2-468x263.png"><img src="../images/style-manager-2-468x263.png" alt="" width="468" height="263"/></a>
+                      <p>where:</p>
+                      <ul class="list-ordered">
+                        <li>Tab on developer panel for showing HTML code and styles.</li>
+                        <li>Webpage HTML code</li>
+                        <li>Trigger for showing/hiding the style manager</li>
+                        <li>Style manager's panel</li>
+                      </ul>
+                      <p>The panel of style manager can also be relatively divided into the following components:</p><a class="gallery-item" data-lightgallery="item" href="../images/style-manager-3-448x400.png"><img src="../images/style-manager-3-448x400.png" alt="" width="448" height="400"/></a>
+                      <ul class="list-ordered">
+                        <li>Tab for showing styles that are applied to the current element. All of these styles are editable, be careful with editing global styles!</li>
+                        <li>Tab, which shows all styles applied to a pseudo-element of the selected element, e.g. :before, :after</li>
+                        <li>Tab displaying all styles including those inherited from their parents, added by the browser that are applied to the element.</li>
+                        <li>"States" toggle, which shows element's styles in states :hover, :focus, :active</li>
+                        <li>Button for adding a selector to the style manager of the chosen element. </li>
+                        <li>Area for displaying element styles according to the client's choice.</li>
+                      </ul>
+                      <p class="big">Principle of Style Manager operation</p>
+                      <p>To begin your work with Style Manager, you need the basic knowledge of HTML and CSS.</p>
+                      <p>Style Manager displays styles of a selected element so when you open Style Manager without selecting an element, it will be empty.</p>
+                      <p class="big">How to select an element to display its styles </p>
+                      <p>There are 2 ways of selecting an element:</p>
+                      <ul class="list-marked">
+                        <li>Using the Visual Editor</li>
+                        <li>Using the editor of webpage HTML Code</li>
+                      </ul>
+                      <p>In the first case, it is enough to press LMB on the target element in Visual Editor. If the element is not described in layers, use Ctrl + LMB to select it.</p>
+                      <p>In the second case, you need to open the HTML code of the page using the context menu of Visual Editor and select "Source Code" or switch to Editing Mode and open HTML tab on the developer panel.</p>
+                      <p>After this, you can select the tag you need with LMB. At the same time, the element in Visual Editor will be selected as well, and element styles will be displayed in Style Manager.</p>
+                      <p class="text-success text-italic">*If the selected tag will be located not in the page's container (you can find more about it in "Configuration" section), then the element will not be selected.</p>
+                      <p class="big">How to add/change the element styles using Style Manager</p>
+                      <p>When editing styles with Style Manager, a new CSS file (novi.css) is created where all styles that you add are stored. Modified styles will be rewritten in current project files.</p>
+                      <p>To begin, you need to select the desired element, read more about it in the previous paragraph.</p>
+                      <p>Afterward, if you need to modify an existing style, just click LMB on a necessary property in Style tab or in Pseudo-Elements tab, and replace it with the one you need. All selectors, properties, and values are editable.</p>
+                      <p>You need to be attentive when making changes in global element styles. Editing values and properties of the chosen selector will lead to changes of all elements that suit the chosen selector.</p>
+                      <p>To add new styles to the element, you need to use the button "+" located in the top right corner of Style Manager.</p>
+                      <p>It is important to know that when "Pseudo-Elements" is opened or :hover, :active states are selected, a corresponding selector will be added:</p><a class="gallery-item" data-lightgallery="item" href="../images/style-manager-4-448x400.png"><img src="../images/style-manager-4-448x400.png" alt="" width="448" height="400"/></a>
+                      <p>In case of adding a style with the state novi resizer (see more in "Resolution preview tool" paragraph), which differs from "Desktop Full HD", the CSS rule will be transformed into a corresponding media request.</p>
+                      <p class="text-italic text-success">* Visual Editor now also has a feature of setting the hover on any element. To do so, click RMB on the target element and open the context menu. After that, choose "Force 'hover' state". This feature is available in the Editing Mode. To view :hover state in the Design Mode, you need to use Style Manager, "States" button.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="updater" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Updater</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Builder updates are available starting from the v. 0.8.3.</p>
+                      <p>By default Novi updates are disabled, you should tick the "Check for updates" item under the system settings in order to enable them.</p>
+                      <p>If there is a newer version of the Novi Builder, you will see the dialog window after the loading of the builder. You’ll be able to update the builder by following its instructions.</p>
+                      <p>The current project will remain unchanged after the update applied.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="hotkeys" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Hotkeys</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>There is a range of useful hotkeys in various Novi Builder modules.</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Application</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Ctrl + S - Save the project</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Visual Editor (Edit Mode)</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Ctrl + Enter - deselect the current element</li>
+                        <li>Esc - deselect the current element</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Visual Editor (Design Mode)</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Alt + ~ - navigate to the parent container of the selected item</li>
+                        <li>Ctrl + X - cut the selected item</li>
+                        <li>Ctrl + C - copy the selected item</li>
+                        <li>Ctrl + Alt + V - paste before the selected item</li>
+                        <li>Ctrl + V - paste into the selected item</li>
+                        <li>Ctrl + Shift + V - paste after the selected item</li>
+                        <li>Delete - remove the item</li>
+                        <li>Ctrl + D - duplicate the selected item</li>
+                        <li>Ctrl + Q - save the selected item as a preset</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-title">
+                      <h6>Code Editor</h6>
+                    </div>
+                    <div class="box-content">
+                      <ul class="list-marked">
+                        <li>Ctrl + S - Save in the editor</li>
+                        <li>Ctrl + L - file formatting</li>
+                        <li>Ctrl + D - remove the entire line</li>
+                        <li>Ctrl + Shift + D - duplicate the entire line</li>
+                        <li>Ctrl + Z - undo the last change</li>
+                        <li>Ctrl + C - copy into the clipboard</li>
+                        <li>Ctrl + V - paste from the clipboard</li>
+                        <li>Alt + Down - shift the line down</li>
+                        <li>Alt + Up - shift the line up</li>
+                        <li>Alt + Delete - remove to the end of the line</li>
+                        <li>Alt + Backspace - remove to the start of the line</li>
+                        <li>Ctrl + A - select all</li>
+                        <li>Shift + Left - select one symbol to the left</li>
+                        <li>Shift + Right - select one symbol to the right</li>
+                        <li>Shift + Home - select to the start of the line</li>
+                        <li>Shift + End - select to the end of the line</li>
+                        <li>Ctrl + Shift + Home - select to the start of the file</li>
+                        <li>Ctrl + Shift + End - select to the end of the file</li>
+                        <li>Ctrl + LMB (left mouse button) - set multicursor</li>
+                        <li>Ctrl + Alt + Right - select the next reiteration setting of multicursor</li>
+                        <li>Ctrl + Alt + Left - select the previous reiteration setting of multicursor</li>
+                        <li>Ctrl + F - find</li>
+                        <li>Ctrl + H - replace</li>
+                        <li>Ctrl + K - find the next item</li>
+                        <li>Ctrl + Shift + K - find the previous item\</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <footer class="section footer-classic context-dark">
+        <div class="shell text-right">
+          <!-- Rights-->
+          <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Novi Builder Documentation</span></p>
+        </div>
+      </footer>
+
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="../js/core.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Documentation</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="../images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Page-->
+    <div class="page">
+      <div class="page-loader"><img src="../images/novi-logo-61x54.png" alt="" width="61" height="54"/>
+        <h5>LOADING<span class="dot-1"></span><span class="dot-2"></span><span class="dot-3"></span></h5>
+      </div>
+      <header class="page-header bg-gray-darker section-xs">
+        <div class="shell">
+          <div class="range range-xs-justify range-middle">
+            <div class="cell-xs-4"><a class="brand-logo" href="../../index.html"> <img src="../images/intro-novi-logo-30x30.png" alt="" width="30" height="30"/><span>Novi builder</span></a></div>
+            <div class="cell-xs-4 text-sm-right">
+              <h6>Documentation v.0.9.2</h6>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="main-section bg-white section-lg">
+        <div class="shell">
+          <div class="range range-md-justify">
+            <div class="cell-sm-4 cell-md-3" style="position:relative;">
+              <!-- Navigation-->
+              <!-- RD Navbar-->
+              <div class="rd-navbar-wrap">
+                <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-sidebar" data-sm-device-layout="rd-navbar-sidebar" data-md-device-layout="rd-navbar-sidebar" data-md-layout="rd-navbar-sidebar" data-lg-layout="rd-navbar-sidebar" data-lg-device-layout="rd-navbar-sidebar" data-sm-auto-height="false" data-md-auto-height="false" data-lg-auto-height="false">
+                  <!-- RD Navbar Toggle -->
+                  <button class="rd-navbar-sidebar-toggle" data-rd-navbar-toggle=".rd-navbar-sidebar-inner"><span></span></button>
+                  <div class="rd-navbar-sidebar-inner">
+                    <div class="rd-navbar-inner">
+                      <!-- RD Navbar Panel-->
+                      <div class="rd-navbar-panel">
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                      </div>
+                      <div class="rd-navbar-aside-right">
+                        <div class="rd-navbar-nav-wrap">
+                          <!-- RD Navbar Nav-->
+                          <ul class="rd-navbar-nav">
+                            <li><a href=".././">Getting Started</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#system-requirements">System Requirements</a></li>
+                                <li><a href="#package-structure">Package structure</a></li>
+                                <li><a href="#installation">Installation</a></li>
+                                <li><a href="#web-server-requirements">Web Server Requirements</a></li>
+                                <li><a href="#authorization">Authorization</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="features.html">Features</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#page-manager">Page Manager</a></li>
+                                <li><a href="#page-settings">Page Settings</a></li>
+                                <li><a href="#design-mode">Design Mode</a></li>
+                                <li><a href="#edit-mode">Edit Mode</a></li>
+                                <li><a href="#preview-mode">Preview Mode</a></li>
+                                <li><a href="#configuration-layer-tool">Configuration (Layer tool)</a></li>
+                                <li><a href="#presets-tool">Presets tool</a></li>
+                                <li><a href="#content-editor-basic-tools">Content Editor (basic tools)</a></li>
+                                <li><a href="#drag-and-drop-tool">Drag and Drop tool</a></li>
+                                <li><a href="#text-editor">Text Editor</a></li>
+                                <li><a href="#code-editor">Code Editor</a></li>
+                                <li><a href="#context-menu">Context menu</a></li>
+                                <li><a href="#media-library">Media library</a></li>
+                                <li><a href="#icons-manager">Icons manager</a></li>
+                                <li><a href="#resolution-preview-tool">Resolution preview tool</a></li>
+                                <li><a href="#export">Export</a></li>
+                                <li><a href="#import">Import</a></li>
+                                <li><a href="#publication">Publication</a></li>
+                                <li><a href="#multilanguage">Multilanguage</a></li>
+                                <li><a href="#style-manager">Style Manager</a></li>
+                                <li><a href="#updater">Updater</a></li>
+                                <li><a href="#hotkeys">Hotkeys</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="plugins.html">Plugins</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#plugins-overview">Plugins Overview</a></li>
+                                <li><a href="#background-image-plugin">Background Image Plugin</a></li>
+                                <li><a href="#background-plugin">Background Plugin</a></li>
+                                <li><a href="#image-plugin">Image Plugin</a></li>
+                                <li><a href="#iframe-plugin">Iframe Plugin</a></li>
+                                <li><a href="#link-plugin">Link Plugin</a></li>
+                                <li><a href="#material-parallax-plugin">Material Parallax Plugin</a></li>
+                                <li><a href="#label-plugin">Label Plugin</a></li>
+                                <li><a href="#countdown-plugin">Countdown Plugin</a></li>
+                                <li><a href="#google-map-plugin">Google Map Plugin</a></li>
+                                <li><a href="#icons-plugin">Icons Plugin</a></li>
+                                <li><a href="#owl-carousel-plugin">Owl Carousel Plugin</a></li>
+                                <li><a href="#campaign-monitor-plugin">Campaign Monitor Plugin</a></li>
+                                <li><a href="#mailchimp-plugin">Mailchimp Plugin</a></li>
+                                <li><a href="#rd-mailform-plugin">RD Mailform Plugin</a></li>
+                                <li><a href="#rd-instagram-feed-plugin">RD Instagram Feed Plugin</a></li>
+                                <li><a href="#rd-twitter-feed-plugin">RD Twitter Feed Plugin</a></li>
+                                <li><a href="#camera-slider-plugin">Camera Slider Plugin</a></li>
+                                <li><a href="#swiper-slider-plugin">Swiper Slider Plugin</a></li>
+                                <li><a href="#vide-plugin">Vide Plugin</a></li>
+                                <li><a href="#lightgallery-plugin">Lightgallery Plugin</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="import-template-step-by-step.html">Import Template <br> (Step by Step)</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#builder-setup">Builder Setup</a></li>
+                                <li><a href="#template-import-preparation">Template Import Preparation</a></li>
+                                <li><a href="#preparing-scripts-for-working-with-builder">Preparing Scripts for Working with Builder</a></li>
+                                <li><a href="#preparing-styles-for-working-with-builder">Preparing Styles for Working With Builder</a></li>
+                                <li><a href="#preparing-html-markup-for-working-with-builder">Preparing HTML Markup for Working with Builder</a></li>
+                                <li><a href="#project-setup">Project Setup</a></li>
+                                <li><a href="#project-preparation-for-use">Project Preparation for Use</a></li>
+                              </ul>
+                            </li>
+                            <li class="active opened"><a href="video-tutorials.html">Video Tutorials</a>
+                              <!-- RD Navbar Dropdown-->
+                              <ul class="rd-navbar-dropdown">
+                                <li><a href="#vt--novi-builder-membership">Novi Builder Membership</a></li>
+                                <li><a href="#vt--owl-carousel-plugin">Owl Carousel Plugin</a></li>
+                                <li><a href="#vt--google-maps-plugin">Google Maps Plugin</a></li>
+                                <li><a href="#vt--publish-import-export">Publish, Import, Export</a></li>
+                                <li><a href="#vt--gallery-plugin">Gallery Plugin</a></li>
+                                <li><a href="#vt--replace-images">Replace Images</a></li>
+                                <li><a href="#vt--swiper-slider-plugin">Swiper Slider Plugin</a></li>
+                                <li><a href="#vt--replace-icon">Replace Icon</a></li>
+                                <li><a href="#vt--text-editor">Text Editor</a></li>
+                                <li><a href="#vt--working-with-presets">Working with Presets</a></li>
+                                <li><a href="#vt--modes-overview">Modes Overview</a></li>
+                                <li><a href="#vt--editing-links">Editing Links</a></li>
+                                <li><a href="#vt--page-manager-overview">Page Manager Overview</a></li>
+                                <li><a href="#vt--introduction-to-interface">Introduction to Interface</a></li>
+                                <li><a href="#vt--create-you-custom-html-website">Create you custom HTML website</a></li>
+                                <li><a href="#vt--developer-tools">Developer Tools</a></li>
+                                <li><a href="#vt--visual-page-editor">Visual Page Editor</a></li>
+                                <li><a href="#vt--import-any-existing-website">Import any existing website</a></li>
+                                <li><a href="#vt--use-case-tools">Use Case Tools</a></li>
+                                <li><a href="#vt--preset-building-tools">Preset Building Tools</a></li>
+                                <li><a href="#vt--publish-and-export">Publish and Export</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="cell-sm-8">
+              <div class="main-section-inner">
+                <div id="video-tutorials" data-type="anchor">
+                  <div class="main-title">
+                    <h2>Video Tutorials</h2>
+                  </div>
+                  <hr>
+                </div>
+
+                <div id="vt--novi-builder-membership" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Novi Builder Membership</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/NtguoUXwO3A" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Become a member of  Novi Builder community to get acess to:</p>
+                      <ul class="list-marked">
+                        <li>Flexible HTML Templates</li>
+                        <li>Easy Visual Editor</li>
+                        <li>Feature-rich Plugins</li>
+                        <li>Tons of Ready-Made Elements</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--owl-carousel-plugin" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Owl Carousel Plugin</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/tEO-4HVZ5ts" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--google-maps-plugin" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Google Maps Plugin</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/IjlqZ9aR8nk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--publish-import-export" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Publish, Import, Export</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/eXK5nA5HwyM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--gallery-plugin" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Gallery Plugin</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/NV4owbXVO_w" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--replace-images" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Replace Images</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/vcx8mWiWROA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--swiper-slider-plugin" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Swiper Slider Plugin</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/zdL921YhXxo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--replace-icon" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Replace Icon</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/QCe4hio0gSs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--text-editor" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Text Editor</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/k5vV5CQRLcE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--working-with-presets" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Working with Presets</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/1R3XeMeMGD0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--modes-overview" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Modes Overview</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/g4i04QTGdig" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--editing-links" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Editing Links</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/do1CwSGb0ME" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--page-manager-overview" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Page Manager Overview</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/mBET9wE9Mx4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--introduction-to-interface" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Introduction to Interface</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/UKwXSURa8LY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive visual page editor to create an HTML website on your own.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--create-you-custom-html-website" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Create you custom HTML website</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/e_TCFkRDmls" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Novi Builder is a perfect match for both non-techies planning to start off with their own websites, as well as coding experts delivering web products for their clients.</p>
+                      <p>Are you an HTML templates developer? Do you sell your own products? Do you want them to beat the competition? Get closer to your clients. Import any valid HTML template into Novi Builder with 3 clicks only and multiply your earnings today.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--developer-tools" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Developer Tools</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/pf2yHngT4AU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Don't compromise on visual and code editing.</p>
+                      <p>If you know how to code, then go ahead and edit source HTML, CSS and JS code of your project. Our integrated code editor comes with Emmet support and syntax highlighting for a more enjoyable and effective work. The way the editor is organized and how it works will look familiar to you.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--visual-page-editor" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Visual Page Editor</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/n30mng_hbNk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use a simple and intuitive page editor to create an HTML website on your own.</p>
+                      <p>You do not need to have any special skills to create a stunning HTML website with the help of the editor. Novi Builder lets you feel the ease of adding and editing your own texts, as well as upload, customize, tweak, and remove different elements with a click of a mouse.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--import-any-existing-website" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Import any existing website</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/tX8QSLiXYo4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Start tweaking your own existing HTML website in 3 clicks.</p>
+                      <p>If you have a ready-made site and want to bring changes to its content in a quick and easy style, use Novi. With its help, you can bring the desired changes to your site without touching a line of code or spending a fortune on a web developer.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--use-case-tools" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Use Case Tools</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/VBeRU4lAXIw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Change the rules and basic principles of content editing in your project.</p>
+                      <p>Give your clients exactly what they are looking for while taking control of the content editing settings within the Novi Builder. Describe the things which can be moved, changed or deleted.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--preset-building-tools" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Preset Building Tools</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/OsRSimB5B-I" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Use blocks and elements to build your website.</p>
+                      <p>Create your own website by means of preset block and elements. Use tools integrated in Novi Builder to create your own presets from different pieces of your design.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="vt--publish-and-export" data-type="anchor">
+                  <div class="main-title">
+                    <h4>Publish and Export</h4>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <iframe width="100%" height="415" src="https://www.youtube.com/embed/8waOIijDHMI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="box-content">
+                      <p>Publish your website on a server or export it with a click.</p>
+                      <p>Thanks to Novi Builder, you can bring changes to the real website in a matter of seconds. You can also feel the ease of exporting clean, valid HTML, CSS or JS code of your web project for its further use on WordPress or other platforms.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <footer class="section footer-classic context-dark">
+        <div class="shell text-right">
+          <!-- Rights-->
+          <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Novi Builder Documentation</span></p>
+        </div>
+      </footer>
+
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="../js/core.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
