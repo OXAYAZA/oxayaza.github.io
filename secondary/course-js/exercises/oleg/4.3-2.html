@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.3-2 Проверьте спам</title>
+</head>
+<body>
+
+	<script>
+		"use strict";
+		function checkSpam( str ) {
+		   var str = str;
+		   if ( str.toLowerCase().indexOf( 'viagra' ) >= 0 || str.toUpperCase().indexOf( 'XXX' ) >= 0 ) {
+		   	return true;
+		   } else {
+		   	return false;
+		   }
+		}
+
+		//console.log( checkSpam('buy ViAgRA now') );
+		console.log( checkSpam('free xxxxx') );
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.5-2 Сумма свойств</title>
+</head>
+<body>
+	<script>
+		"use strict";
+		var salaries = {
+		  "Вася": 100,
+		  "Петя": 300,
+		  "Даша": 250
+		};
+
+		function salariesSum( obj ) {
+			var sum = 0;
+
+			for( var key in obj ) {
+				sum += obj[ key ];
+			}
+
+			return sum;
+		}
+
+		console.log( salariesSum( salaries ) );
+
+	</script>
+</body>
+</html>

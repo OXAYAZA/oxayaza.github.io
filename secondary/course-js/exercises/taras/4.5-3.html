@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.5-3 Свойство с наибольшим значением</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		var salaries = {
+			"Вася": 100,
+			"Петя": 300,
+			"Даша": 250
+		};
+
+		var
+			resultValue = 0,
+			resultName;
+
+		for ( var name in salaries ) {
+			if ( salaries[ name ] > resultValue ) {
+				resultValue = salaries[ name ];
+				resultName = name;
+			}
+		}
+
+		if ( resultValue === 0 ) resultName = 'нет сотрудников';
+
+		console.log( resultName );
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>4.8-4 Фильтрация массива "на месте"</title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    var arr = [5, 3, 8, 1];
+    function filterRangeInPlace( arr, a, b ){
+      for( var i = 0; i < arr.length; i++ ){
+        if( a <= arr[i] && arr[i] <= b ) {
+          
+        } else {
+          arr.splice( arr.indexOf( arr[i] ), 1 );
+        }
+      }
+      return console.log( arr );
+    }
+    filterRangeInPlace( arr, 1, 4 );
+  </script>
+</body>
+
+</html>

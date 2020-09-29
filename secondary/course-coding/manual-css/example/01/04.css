@@ -1,0 +1,9 @@
+H1 {
+  color: #000080;
+  font-size: 2em;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center; /* Выравнивание по центру */
+}
+P {
+  padding-left: 20px;
+}

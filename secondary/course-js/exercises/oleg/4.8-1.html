@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>4.8-1 Добавить класс в строку</title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+     var obj = {
+      className: 'open menu'
+    }
+    function addClass( obj, cls ){
+      var arr = obj.className.split( ' ' );
+      if( arr.indexOf( cls ) < 0 ){
+        arr.push( cls );
+        arr = arr.join( ' ' );
+        obj.className = arr;
+        return console.log( 'cp0', obj );
+      }
+      return console.log( 'без изменений (класс уже существует)', obj );
+      
+    }
+    addClass(obj, 'new');
+    addClass(obj, 'open');
+    addClass(obj, 'me');
+  </script>
+</body>
+
+</html>

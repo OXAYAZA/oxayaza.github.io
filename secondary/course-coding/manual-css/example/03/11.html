@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Позиционирование</title>
+  <style type="text/css">
+   .layer1 {
+    width: 217px; /* Ширина слоя */
+    height: 512px; /* Высота слоя */
+    background: url(images/bg2.png) no-repeat; /* Фоновая картинка */
+    position: absolute; /* Абсолютное позиционирование */
+    right: 20%; /* Положение справа */
+    bottom: 0; /* Положение снизу */
+   }
+   .layer2 {
+    background: #000; /* Цвет фона для IE */
+    background: rgba(0,0,0, 0.5); /* Цвет фона с полупрозрачностью */
+    color: #fff; /* Цвет текста */
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 30px; /* Положение снизу */
+    width: 207px; /* Ширина слоя */
+    padding: 5px; /* Поля */
+   }
+  </style>
+ </head>
+ <body>
+  <div class="layer1">
+   <div class="layer2">
+     Позвоночник человека
+   </div>
+  </div>
+ </body>
+</html>

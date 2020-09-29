@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.5-3 Свойство с наибольшим значением</title>
+</head>
+<body>
+	<script>
+		"use strict";
+
+		var salaries = {
+			"Вася": 100,
+			"Петя": 300,
+			"Даша": 250
+		};
+
+		function salariesMax( obj ) {
+			var max = 0;
+
+			for( var key in obj ) {
+				if( max < obj[ key ] ) {
+					max = obj[ key ];
+					name = key;
+				}
+			}
+
+			if( max === 0 ) {
+				return "нет сотрудников";
+			}
+
+			return name;
+		}
+
+		console.log( salariesMax( salaries ) );
+
+	</script>
+</body>
+</html>

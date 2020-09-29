@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.3-3 Усечение строки</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		function truncate ( str, maxlength ) {
+			if ( str.length > maxlength ) {
+				var str = str.slice( 0, maxlength - 3 ) + '...';
+			}
+
+			return str;
+		}
+
+		truncate( 'Вот, что мне хотелось бы сказать на эту тему:', 20 );
+	</script>
+</body>
+</html>

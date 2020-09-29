@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Полупрозрачный фон</title>
+  <style type="text/css">
+   BODY {
+    background: url(images/star.png); /* Фон веб-страницы */
+   }
+   .transparent {
+    background-color: rgba(0, 120, 201, 0.7); 
+                      /* Цвет фона и значение прозрачности */
+    padding: 10px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+   }
+  </style>
+  <!--[if (lt IE 9) & !(IE 6)]>
+  <style type="text/css">
+   .transparent {
+    filter: 
+     progid:DXImageTransform.Microsoft.gradient(startColorstr=#c80078c9, 
+     endColorstr=#c80078c9); 
+   } 
+  </style>
+  <![endif]-->
+  <!--[if IE 6]>
+  <style type="text/css">
+   .transparent { background: #0078c9; } 
+  </style>
+  <![endif]-->
+ </head>
+ <body>
+  <div class="transparent">
+   Исполинская звездная спираль с поперечником в 50 кпк, 
+   это удалось установить по характеру спектра, прекрасно иллюстрирует 
+   метеорный дождь, тем не менее, Дон Еманс включил в список всего 
+   82 Великие Кометы.
+  </div>
+ </body>
+</html>

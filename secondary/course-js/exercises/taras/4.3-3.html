@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.3-3 Усечение строки</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		function truncate ( str, maxlength ) {
+			if ( str.length > maxlength ) {
+				return str.slice( 0, maxlength - 3 ) + '...';
+			}
+
+			return str;
+		}
+
+		console.log( truncate( '12345678...', 8 ) );
+	</script>
+</body>
+</html>

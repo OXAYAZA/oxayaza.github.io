@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>4.8-8 Сортировка объектов</title>
+</head>
+
+<body>
+  <h1> тоже не пашет</h1>
+  <script>
+    'use strict';
+    var vasya = { name: "Вася", age: 23 };
+    var masha = { name: "Маша", age: 18 };
+    var vovochka = { name: "Вовочка", age: 6 };
+
+    var people = [ vasya , masha , vovochka ];
+
+    function sortAge( a, b ) {
+      if( people[a].age > people[b].age ) return 1;
+      if( people[a].age < people[b].age ) return -1;
+    }
+
+    console.log( people.sort(sortAge) );
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Использование float</title>
+  <style type="text/css">
+   .col1, .col2, .footer { padding: 10px; }
+   .col1 { float: left; width: 100px; background: #E8D9A9; }
+   .col2 { margin-left: 120px; background: #ECC0A4; }
+   .photo { width: 150px; border: 1px solid #333; text-align: center; 
+    margin-right: 10px; background: #fff; float: left; }
+   .clearleft { clear: left; }
+   .footer { background: #9A5044; color: #fff; clear: left; }
+  </style>
+ </head>
+ <body>
+  <div class="col1"><h3>Меню</h3><p>Лучшие фотографии</p>
+   <p>По годам</p><p>По рейтингу</p><p>По комментариям</p></div>
+  <div class="col2">
+   <div class="photo">
+    <p><img src="images/thumb1.jpg" alt="" /></p>
+    <p class="caption">Софийский собор</p>
+   </div>
+   <div class="photo">
+    <p><img src="images/thumb2.jpg" alt="" /></p>
+    <p class="caption">Польский костёл</p>
+   </div><div class="clearleft"></div>
+   <p>Новая строка</p>
+  </div>
+  <div class="footer">Подвал</div>
+ </body>
+</html>

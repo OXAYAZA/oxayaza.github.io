@@ -1,0 +1,156 @@
+<html>
+<head>
+
+
+<TITLE>Первые шаги - Учебник (руководство) по хтмл (html). Ступенька 11-ая.</TITLE>      
+<META HTTP-EQUIV="Content-Type" Content="text/html; Charset=Windows-1251">
+<META Name="copyright" Content="Алленова Наталья">
+<META NAME="author" CONTENT="Алленова Наталья Email: seagull@pisem.net"><META NAME="keywords" CONTENT="графика, хтмл, для, начинающий, начинающих, чайников, новичков, просто, основа, основы, графика, страница, домашний, домашняя, сайт, новый, новичок, html, обучение, учеба, пример, веб, мастер, веб-мастер, дизайн, веб-дизайн, вебдизайн, дезайн, веб-дезайн, вебдезайн, дезайнер, дизайнер, ступени, тэги, тэг, теги, тег, аттрибут, атрибуты, парамет, design, web, help, помощь, icq, e-mail, guest, book, guestbook, гостевая, книга, форум, аська, контакт, ссылка, link, links, banner, обмен, баннер, баннерами, банер, baner, друзья, friends, почитать, написать, вопросы, вопрос, ответ, проект, ступени, словарь"> <META NAME="description" CONTENT="Основы сайтостроительства для чайников: дизайн, графика, html (хтмл), реклама, размещение в сети интернет, продвижение, поддержка сайта. Уникальные учебники, пособия и статьи. Каталог ссылок. Создайте свою домашнюю страничку своими руками и без хтмл (html) редакторов.">
+
+
+
+
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" bottommargin="0" rightmargin="0"  style="margin:0;">
+
+
+<center>
+
+<table width="760" cellspacing="0" cellpadding="0">
+<tr>
+<td width="760" valign="top" bgcolor="#ffffff">
+
+
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td height="7" background="bgw.gif" valign="top"><img src="bgw.gif" border="0" width="1" height="1"></td></tr>
+<tr><td height="20" background="bg2.gif" valign="top"><img src="bg2.gif" border="0" width="1" height="20" align="absmiddle"><font face="verdana" size="-2"><img src="bg2.gif" border="0" width="15" height="20" align="absmiddle"><a href="index.html">Главная</a> / <a href="1step2.html">Html</a> / Учебник по Html. Ступенька 11-ая.</td><td heght="20" background="bg2.gif" align="right"><font face="verdana" size="-2">&nbsp;<img src="bg2.gif" border="0" width="15" height="20" align="absmiddle"></td></tr>
+<tr><td background="line2.gif" colspan="2"><img src="line2.gif" border="0" height="2" width="2"></td></tr>
+</table>
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+<br>
+<h4>Учебник по Html для чайников. Простейшие.</h4>
+<b>Ступенька 11-ая.</b>
+
+<br><br>
+Итак, мы задались вопросом как же сделать так, чтобы текст располагался весь рядом с картинкой, а не только одна его строчка. Все очень просто. Давайте вспомним об атрибуте align, который отвечает за выравнивание. Атрибут align есть и у картинок: 
+<br><br>
+<tt>&lt;img src="pr1.png" align="left"&gt;</tt>
+<br><br>
+Это означает, что картинка будет прижата к левому краю экрана, а текст будет обтекать ее справа. Чтобы сделать наоборот (картинка справа, текст слева) надо прописать right: 
+<br><br>
+<tt>&lt;img src="pr1.png" align="right"&gt;</tt>
+<br><br>
+Но это не все: текст может располагаться внизу картинки (это по умолчанию) - (1), посередине - (2), и вверху - (3):<br><br>
+<tt>(1) - &lt;img src="pr1.png" align="bottom"&gt;<br>
+(2) - &lt;img src="pr1.png" align="middle"&gt;<br>
+(3) - &lt;img src="pr1.png" align="top"&gt;<br>
+</tt>
+<br><br>
+Кроме атрибута align для тэга &lt;img&gt; можно ввести еще несколько атрибутов: <br><br>
+<tt>
+(1) - &lt;img src="pr1.png" vspace="10"&gt;<br>
+(2) - &lt;img src="pr1.png" hspace="30"&gt;<br>
+(3) - &lt;img src="pr1.png" alt="моя фотография"&gt;<br>
+(4) - &lt;img src="pr1.png" width="100"&gt;<br>
+(5) - &lt;img src="pr1.png" height="200"&gt;<br>
+(6) - &lt;img src="pr1.png" border="5"&gt;<br>
+</tt>
+<br><br>
+Теперь последуют объяснения по пунктам. <br><br>
+
+(1) - атрибут vspace - задает расстояние между текстом и рисунком (по вертикали). Расстояние задается в пикселях. Pixel - минимальная единица изображения, точка. Например,  разрешение экрана 800х600 - 800 на 600 точек. В нашем примере расстояние равно 10 пикселям. 
+<br><br>
+(2) - атрибут hspace - тоже задает расстояние между текстом и рисунком, но по горизонтали. Расстояние задается в пикселях. В нашем примере оно равно 30 пикселям (точкам). 
+<br><br>
+(3) - атрибут alt - краткое описание картинки. Если навести курсором мыши на рисунок, и так подержать его (курсор) несколько секунд, выскочит описание картинки. В нашем случае это будет фраза - "моя фотография". Если параметр alt не задавать, описания не будет. Но умные люди говорят, что описание картинкам задавать следует (особенно, если это кнопки), т.к. есть особенные люди, которые бродят по интернету с отключенной графикой. Без alt им не будет видно на что нажимать (если картинка является ссылкой или кнопкой в меню), т.к. картинка не отображается, а при заданном alt, можно увидеть надпись, для чего картинка предназначена. 
+<br><br>
+(4) атрибут width - ширина самой картинки (в пикселях). Если ширину не задавать специально, то по умолчанию она будет равна реальной ширине картинки (а так вы можете ее сделать или уже, или шире). 
+<br><br>
+(5) - атрибут height - высота самой картинки (тоже в пикселях). Так же как в случае с width высоту (height) картинки можно и не задавать. Правда, те же умные люди говорят, что размеры картинок следует задавать, для тех же особенных людей с отключенной графикой... 
+<br><br>
+(6) – атрибут border - рамка вокруг самой картинки (в пикселях). Можно не задавать. Однако, по умолчанию, рамка вокруг картинки есть всегда. И если вы хотите убрать ее, то выставляйте атрибут border равным нулю. 
+<br><br>
+Как мы помним, атрибуты для одного тэга могут употребляться одновременно друг с другом, чтобы избежать путаницы продемонстрирую наглядно на нашей страничке. Введем следующие атрибуты для нашей картинки: 
+<br><br>
+<tt>&lt;img src="pr1.png" align="left" hspace="30" vspace="5" alt="моя фотография"&gt;</tt>
+<br><br>
+Наша картинка будет прижата к левому краю экрана, текст будет обтекать ее справа, расстояние до текста по горизонтали - 30 пикселей, по вертикали - 5 пикселей (чтобы красиво все смотрелось), ну, и если вы наведете на картинку курсор, то выскочит надпись - "моя фотография". 
+
+
+
+</div><br><br>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="7" background="bgw.gif">&nbsp;</td>
+<td width="20" background="bg2.gif">&nbsp;</td>
+<td width="7" background="bgw.gif">&nbsp;</td>
+<td background="bgw.gif">
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+<tt>&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Мой первый шаг &lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body text="#336699" bgcolor="#000000"&gt;<br>
+&lt;div align="center"&gt;<!--Rating@Mail.ru COUNTER--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=840315;js='+js+a+';rand='+Math.random()+
+'" height=1 width=1/>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><img
+src="http://top.list.ru/counter?js=na;id=840315"
+height=1 width=1 alt=""/></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER--><!--Rating@Mail.ru LOGO--><a target=_top
+href="http://top.mail.ru/jump?from=840315"><img
+src="http://top.list.ru/counter?id=840315;t=49;l=1"
+border=0 height=1 width=1
+alt="Рейтинг@Mail.ru"/></a><!--/LOGO--><!--begin of Top100--><a href="http://top100.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?253736" alt="Rambler's Top100" width=1 height=1 border=0></a><br>
+&lt;H3&gt;<font color="#336699">Здравствуйте, это моя первая страница.</font>&lt;/H3&gt;<br>
+&lt;br&gt;<br>
+&lt;font color="#CC0000"&gt;<font color="#CC0000"> Добро пожаловать!</font>&lt;/font&gt; <font color="#336699">:) </font>&lt;/div&gt;<br>
+&lt;p align="justify"&gt;<br><b>&lt;img src="primtocodephoto.gif" align="left" HSPACE=30 VSPACE=5 alt="моя фотография"&gt;</b><font color="#336699">
+Я совсем недавно начал(а) знакомиться с виртуальной жизнью, но мне по давней традиции тоже захотелось создать свою домашнюю  страничку для моих новых виртуальных друзей и знакомых, чтобы они могли посмотреть мои фотографии, почитать обо мне, черкнуть пару строчек в мою гостевую книгу. 
+</font>
+&lt;br&gt;&lt;br&gt;<font color="#336699">
+А может и просто случайный посетитель вдруг захочет познакомится со мной, и у меня появится </font>&lt;b&gt;<font color="#336699"> еще один виртуальный друг? :)</font> &lt;/b&gt;&lt;br&gt;&lt;br&gt; <font color="#336699">На фотографии изображен(а) я. Качество картинки не очень хорошее, к сожалению, поэтому она не четкая и разглядеть черты моего лица немного проблематично. Но в целом заметно, что я вполне ничего:) </font>&lt;br&gt;&lt;br&gt;<font color="#336699"> Если ты так тоже думаешь, то давай как-нибудь встретимcя, поболтаем, чайку попьем в кафешке?:) Кто знает, может быть мы и в реальной жизни станем друзьями:)</font><br>&lt;/p&gt;
+<br>&lt;/body&gt;<br>
+&lt;/html&gt; (<a href="primtocode8.html" target="_blank">посмотреть</a>)</tt>
+</td>
+</tr>
+</table><br><br>
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+
+Советую вам прежде, чем двинуться дальше, поподставлять и другие атрибуты и их значения в наш пример: задать разное значение в пикселях для атрибутов и т.д. - это поможет вам  лучше усвоить наш урок, все-таки тема большая и уже не такая простая:) 
+<br><br>
+Вот мы узнали о том, как расположить текст относительно картинки (+ еще несколько нужных атрибутов), но мы не говорили, как расположить саму картинку в центре экрана (справа, слева). Здесь все очень просто, вспомните параграфы (&lt;p&gt;&lt;/p&gt;) или другие тэги для выравнивания текста, о которых мы говорили, ведь они не только текст выравнивают (см. наш пример, наша картинка заключена в параграф, как и текст).
+<br><br>
+Да, чуть не забыла сказать о том, что картинку можно сделать фоном документа. Это безобразие прописывается в открывающем тэге боди: <br><br>
+<tt>&lt;body text="#336699" bgcolor="#000000" <b>background="ваш_фон.jpg"</b>&gt;</tt><br><br>
+Атрибут background указывает на то, где лежит фоновая картинка, в нашем примере он указывает на то, что наша фоновая картинка лежит в той же директории (папке), что и наш документ. 
+<br><br>
+Но зачем оставлять атрибут bgcolor, если есть background? А вдруг фоновая картинка не загрузится (представьте, такое может быть), тогда сами поймете зачем. 
+<br><br>
+Если вы достаточно поигрались с параметрами картинок, то продолжим наше обучение. 
+
+</div>
+<br>
+<hr size="1" noshade color="#000000">
+
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+
+&lt;&lt;&lt; <a href="10step2.html">Ступенька 10-ая: Назад</a> |  <a href="12step2.html">Далее: Ступенька 12-ая</a> &gt;&gt;&gt;
+
+
+</div>
+</td>
+
+</tr></table>
+</center>
+</body>
+</html>

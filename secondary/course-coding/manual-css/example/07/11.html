@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Вкладки</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+   .tabs {
+    margin: 0; padding: 0; /* Убираем отступы */
+    border-bottom: 1px solid #333; /* Линия снизу */
+    padding-left: 15px; /* Отступ слева от вкладок */
+   }
+   .tabs LI {
+    list-style: none; /* Убираем маркеры */
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+    top: 1px; /* Сдвигаем вниз на толщину линии */
+    background: #f0f0f0; /* Цвет фона вкладок */
+    padding: 4px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    border-left: none; border-bottom: none; /* Убираем слева и снизу */
+   }
+   .tabs LI:first-child {
+    border-left: 1px solid #333; /* Для первой вкладки линия слева */
+   }
+   .tabs .active {
+    background: #fff; /* Цвет фона активной вкладки */
+    border-bottom: 1px solid #fff; /* Прячем линию снизу */
+   }
+  </style>
+  <!--[if IE 7]>
+   <style type="text/css">
+    .tabs LI {
+     zoom: 1; /* Включаем hasLayout */
+     display: inline; /* Строчные элементы */
+     vertical-align: top; /* Выравнивание по верхнему краю */
+    }
+   </style>
+  <![endif]-->
+ </head>
+ <body>
+  <ul class="tabs">
+   <li><a href="linkl.html">Эрик Картман</a></li><li 
+   class="active">Кенни Маккормик</li><li>
+   <a href="link3.html">Стэн Марш</a></li><li>
+   <a href="link4.html">Кайл Брофловски</a></li>
+  </ul>
+ </body>
+</html>

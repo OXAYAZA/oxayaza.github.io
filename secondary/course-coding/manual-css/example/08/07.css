@@ -1,0 +1,20 @@
+ul.menu {
+ list-style: none; /* Убираем маркеры */
+ margin: 40px  0; /* Отступ сверху и снизу */
+ padding: 0; /* Поля */
+}
+ul.menu li {
+ padding: 5px; /* Поля */ 
+ font-size: 0.8em; /* Размер шрифта */
+ font-weight: bold; /* Жирное начертание */
+}
+ul.menu a, ul.menu span {
+ padding: 5px; /* Поля */
+}
+ul.menu li span {
+ padding-left: 25px; /* Поле слева */
+ background: url(images/bullet.png) no-repeat 5px center; /* Маркер */
+}
+ ul.menu li.current { 
+ background: #f9f2e2 url(images/menu-gradient.png) repeat-y; /* Градиент */
+}

@@ -1,0 +1,115 @@
+<html>
+<head>
+
+
+<TITLE>Первые шаги - Учебник (руководство) по хтмл (html). Ступенька 31-ая.</TITLE>      
+<META HTTP-EQUIV="Content-Type" Content="text/html; Charset=Windows-1251">
+<META Name="copyright" Content="Алленова Наталья">
+<META NAME="author" CONTENT="Алленова Наталья Email: seagull@pisem.net"><META NAME="keywords" CONTENT="графика, хтмл, для, начинающий, начинающих, чайников, новичков, просто, основа, основы, графика, страница, домашний, домашняя, сайт, новый, новичок, html, обучение, учеба, пример, веб, мастер, веб-мастер, дизайн, веб-дизайн, вебдизайн, дезайн, веб-дезайн, вебдезайн, дезайнер, дизайнер, ступени, тэги, тэг, теги, тег, аттрибут, атрибуты, парамет, design, web, help, помощь, icq, e-mail, guest, book, guestbook, гостевая, книга, форум, аська, контакт, ссылка, link, links, banner, обмен, баннер, баннерами, банер, baner, друзья, friends, почитать, написать, вопросы, вопрос, ответ, проект, ступени, словарь"> <META NAME="description" CONTENT="Основы сайтостроительства для чайников: дизайн, графика, html (хтмл), реклама, размещение в сети интернет, продвижение, поддержка сайта. Уникальные учебники, пособия и статьи. Каталог ссылок. Создайте свою домашнюю страничку своими руками и без хтмл (html) редакторов.">
+
+
+
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" bottommargin="0" rightmargin="0"  style="margin:0;">
+
+
+<center>
+
+<table width="760" cellspacing="0" cellpadding="0">
+<tr>
+<td width="760" valign="top" bgcolor="#ffffff">
+
+
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td height="7" background="bgw.gif" valign="top"><img src="bgw.gif" border="0" width="1" height="1"></td></tr>
+<tr><td height="20" background="bg2.gif" valign="top"><img src="bg2.gif" border="0" width="1" height="20" align="absmiddle"><font face="verdana" size="-2"><img src="bg2.gif" border="0" width="15" height="20" align="absmiddle"><a href="index.html">Главная</a> / <a href="1step2.html">Html</a> / Учебник по Html. Ступенька 31-ая.</td><td heght="20" background="bg2.gif" align="right"><font face="verdana" size="-2">&nbsp;<img src="bg2.gif" border="0" width="15" height="20" align="absmiddle"></td></tr>
+<tr><td background="line2.gif" colspan="2"><img src="line2.gif" border="0" height="2" width="2"></td></tr>
+</table>
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+<br>
+<h4>Учебник по Html для чайников. Дополнительные.</h4>
+<b>Ступенька 31-ая.</b>
+<br><br>
+Наверное, пройдясь по ступенькам, вы уже поняли, что некоторые тэги и некоторые атрибуты тэгов поддерживаются не всеми броузерами. Не будем искать причин почему (да, и откуда мне лично знать, что толкает производителей броузеров придумывать свои специфические тэги и атрибуты, о которых в <a href="http://pyramidin.narod.ru/html401/index.htm" target="_blank">спецификации</a> (официальной документации по HTML) нет ни слова, а также мне неведомо, почему броузеры не поддерживают некоторые тэги и атрибуты, которые по идее должны поддерживать, т.к. в той же <a href="http://pyramidin.narod.ru/html401/index.htm" target="_blank">спецификации</a> эти тэги и атрибуты упомянуты), лучше поговорим о некоторых специфических атрибутах для тега BODY, которые вам когда-нибудь, да пригодятся. 
+<br><br>
+Многие, когда верстают сайт, сталкиваются со следующей проблемой: поля по краям документа, которые, они не знают, как убрать. Что я имею ввиду – посмотрите пример, и вы увидите те самые поля, которые так нам часто мешают жить: <a href="marginpri.html" target="_blank">посмотрите пример</a>.<br><br>
+К счастью, если нам нужно мы можем управлять ими: мы можем увеличить их, если они нам нужны, а если они нам не нужны, то мы можем убрать их.
+Рассмотрим вариант, когда нам нужно убрать поля документа: <br><br>
+
+<tt>&lt;Body text="#000000" bgcolor="ffffff" <b>topmargin="0" leftmargin="0"</b>&gt;</tt><br><br>
+
+
+Topmargin - определяет ширину верхнего поля документа, leftmargin - определяет ширину левого поля документа. Чтобы убрать поля мы приравняли эти параметры к нулю. Можете посмотреть, <a href="marginpri2.html" target="_blank">что у нас получилось</a>. <br><br>
+
+Вы можете удивиться, в чем же специфичность этих параметров. Дело в том, что topmargin и leftmargin поддерживаются только Internet Explorer. 
+<br><br>
+Но не стоит расстраиваться, Нетскейп (Netscape Navigator) не окажется за бортом, т.к. для этого броузера есть свои аналогичные специфические атрибуты для тега Body - marginheight и marginwidth. Marginheight - аналогичен topmargin, а marginwidth - аналогичен leftmargin. 
+<br><br>
+Теперь, чтобы убрать отступы и для NN, и для IE, надо просто прописать все эти атрибуты вместе для тэга BODY: <br><br>
+
+<tt>&lt;Body text="#000000" bgcolor="ffffff" <b>topmargin="0" leftmargin="0" marginwidth="0" marginheight="0"</b>&gt;</tt><br><br>
+
+
+Таким образом, и в IE все будет хорошо, и NN будет не обижен, и многие другие броузеры тоже :). <br><br>
+Но не торопитесь перебежать на следующую ступеньку. <br><br>
+Topmargin  и leftmargin в Интернет Иксплорер убирает только верхнее и левое поля документа. Чтобы убрать правое и нижнее надо ввести еще атрибуты rightmargin и bottommargin для тэга Body. <br><br>
+
+<tt>&lt;Body text="#000000" bgcolor="ffffff" <b>rightmargin="0" bottommargin="0"</b> topmargin="0" leftmargin="0" marginwidth="0" marginheight="0"&gt;</tt><br><br>
+Итак, мы узнали, как убирать поля в IE и NN. Но, что же с другими броузерами?
+</div><br><br>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="7" background="bgw.gif">&nbsp;</td>
+<td width="20" background="bg2.gif">&nbsp;</td>
+<td width="7" background="bgw.gif">&nbsp;</td>
+<td background="bgw.gif">
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+<tt>
+&lt;style type="text/css"&gt;&lt;!--<br>
+body{margin:0px;padding:0px;}<!--Rating@Mail.ru COUNTER--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=840315;js='+js+a+';rand='+Math.random()+
+'" height=1 width=1/>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><img
+src="http://top.list.ru/counter?js=na;id=840315"
+height=1 width=1 alt=""/></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER--><!--Rating@Mail.ru LOGO--><a target=_top
+href="http://top.mail.ru/jump?from=840315"><img
+src="http://top.list.ru/counter?id=840315;t=49;l=1"
+border=0 height=1 width=1
+alt="Рейтинг@Mail.ru"/></a><!--/LOGO--><!--begin of Top100--><a href="http://top100.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?253736" alt="Rambler's Top100" width=1 height=1 border=0></a><br>
+--&gt;&lt;/style&gt;
+</td>
+</tr>
+</table><br><br>
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+
+
+Вставьте этот загадочный код между тегами &lt;head&gt;&lt;/head&gt;, и проблему с полями можно считать решенной.<br><br>
+Сразу предвижу вопросы относительно приведенного мной загадочного кода. Что это такое? Это CSS – таблицы каскадных стилей, дополнительное средство, при помощи которого вы можете управлять содержимым ваших страниц, CSS, по сути, дополняет HTML, но при этом это отличный от html стандарт. Как вводить стили в документ и о их возможностях мы поговорим позже, в уроках, в которых мы рассмотрим и другие средства, которые помогают сделать наш неуклюжий html-документ динамичным.
+
+
+</div>
+<br>
+<hr size="1" noshade color="#000000">
+
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+
+&lt;&lt;&lt; <a href="30step2.html">Ступенька 30-ая: Назад</a> |  <a href="32step2.html">Далее: Ступенька 32-ая</a> &gt;&gt;&gt;
+
+
+</div>
+</td>
+
+</tr></table>
+</center>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.4-1 Первый объект</title>
+</head>
+<body>
+	<script>
+		'use strict';
+
+		var user = {};
+
+		user.name = 'Вася';
+		user.surname = 'Петров';
+
+		console.log( 'cp1', user.name, user['name'] );
+
+		user.name = 'Сергей';
+
+		console.log( 'cp2', user.name, user['name'] );
+
+		delete user.name;
+
+		console.log( 'cp3', user.name, user['name'] );
+
+	</script>
+</body>
+</html>

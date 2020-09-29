@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.3-1 Сделать первый символ заглавным</title>
+</head>
+<body>
+	
+	<script>
+		"use strict";
+		function ucFirst( str ) {
+		   var str = str;
+		   return str = str.charAt( 0 ).toUpperCase() + str.slice( 1 );
+		}
+
+		console.log( ucFirst('вася') );
+	</script>
+</body>
+</html>

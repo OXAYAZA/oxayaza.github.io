@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Как поймать льва в пустыне? - Метод простых итераций</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]> 
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+  <![endif]-->
+</head>
+
+<body>
+
+<header>
+  <div class="header-bg">
+    <a href="/"><img src="images/header-title.png" alt="Как поймать льва в пустыне" width="456" height="166" /></a>
+  </div>
+</header>
+
+<div class="content-gradient">
+  <div class="content-bg">
+    <div class="content-white">
+
+    <aside>
+      <nav>
+        <ul class="menu">
+		      <li><a href="/">Главная страница</a></li>
+		      <li><a href="assumption.html">Допущения</a></li>
+          <li class="current"><span>Метод простых итераций</span></li>
+          <li><a href="random-number.html">Метод случайных чисел</a></li>
+          <li><a href="dixotomia.html">Метод дихотомии</a></li>
+          <li><a href="golden-section.html">Метод золотого сечения</a></li>
+        </ul>
+      </nav>
+
+      <div class="interest">
+        <h3><img src="images/interest-title.png" alt="Интересная информация" width="164" height="30" /></h3>
+        <p>Львы обитают в Африке южнее пустыни Сахары, также в небольшом количестве водятся в Индии.</p>
+        <p>Взрослый лев способен съесть 20–30 килограммов мяса за один присест.</p>
+      </div>
+    </aside>
+
+    <article>
+      <h1 class="iteration">Метод простых итераций</h1>
+
+      <p>Разобьем пустыню на ряд элементарных прямоугольников, размер  которых совпадает с размером клетки для льва. Пронумеровав прямоугольники от 1  до <em>N</em>, начинаем последовательно накрывать их клеткой (рис.&nbsp;1). Каждое такое  действие называется итерацией, что и послужило названием метода. </p>
+      <figure>
+        <p><img src="images/fig2-1.png" alt="Рис. 1" width="381" height="252" /></p>
+        <figcaption>Рис. 1. Разбиение пустыни на N элементарных прямоугольников</figcaption>
+      </figure>
+      <p>В результате максимум за <em>N</em> итераций лев будет пойман в  клетку.</p>
+      <p>Как видно из приведенного рисунка, начинать поиски льва  можно с любой клетки, главное, чтобы за ограниченное количество шагов обойти  все прямоугольники. При этом обход можно делать по вертикали, горизонтали (рис.&nbsp;2) или  диагонали.</p>
+      <figure>
+        <p><img src="images/fig2-2.png" alt="Рис. 2" width="381" height="252" /></p>
+        <figcaption>Рис. 2. Обход пустыни по горизонтали</figcaption>
+      </figure>
+    </article> 
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="lion"><img src="images/lion.png" alt="" width="130" height="80" /></div>
+  <div class="footer-bg">
+    <div class="copyright">
+      <p><strong>Учебный сайт «Как поймать льва в пустыне»</strong></p>
+      <p>&copy; Влад Мержевич</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

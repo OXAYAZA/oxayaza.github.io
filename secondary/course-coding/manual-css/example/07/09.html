@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Меню</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+   .menu, .menu UL {
+    width: 180px; /* Ширина меню */
+    margin: 0; padding: 0; /* Отключаем отступы и поля */
+    border-bottom: 1px solid #CCC; /* Линия снизу */
+   }
+   .menu LI {
+    list-style: none; /* Убираем маркеры */
+    position: relative; /* Подпункты позиционируются относительно */
+    border: 1px solid #CCC; /* Рамка вокруг пунктов меню */
+    border-bottom: none; /* Границу снизу не проводим */
+   }
+   .menu UL {
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    top: -1px; /* Сдвигаем вверх на толщину линии */
+    left: 178px; /* Сдвигаем подменю вправо */
+   }
+   .menu A {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 5px; /* Поля вокруг надписи */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    background: url(images/bullet.png) 98% 50% no-repeat; 
+                /* Отображаем рисунок стрелки */
+    color: #666; /* Цвет текста */ 
+   }
+   .menu UL A {
+    background-image: none; /* Для подпунктов рисунок убираем */
+   }
+   .menu LI:hover {
+    background-color: #f0f0f0; /* Цвет фона активного пункта */
+   }
+   .menu LI:hover UL {
+    display: block; /* При выделении пункта отображается подменю */
+   }
+   .menu .nobullet { 
+    background-image: none; /* Прячем рисунок */
+   }
+  </style>
+ </head>
+ <body>
+  <ul class="menu">
+   <li><a href="russian.html">Русская кухня</a>
+    <ul>
+     <li><a href="linkrl.html">Бeфcтpoгaнoв</a></li>
+     <li><a href="linkr2.html">Гycь с яблоками</a></li>
+     <li><a href="linkr3.html">Kpyneник новгородский</a></li>
+     <li><a href="linkr4.html">Paки по-русски</a></li>
+    </ul>
+   </li>
+   <li><a href="ukrainian.html">Украинская кухня</a>
+    <ul>
+     <li><a href="linkul.html">Вареники</a></li>
+     <li><a href="linku2.html">Жаркое по-харьковски</a></li>
+     <li><a href="linku3.html">Капустняк черниговский</a></li>
+     <li><a href="linku4.html">Потапцы с помидорами</a></li>
+    </ul>
+   </li> 
+   <li><a href="caucasus.html">Кавказская кухня</a>
+    <ul>
+     <li><a href="linkcl.html">Cyп-харчо</a></li>
+     <li><a href="linkc2.html">Лилибдж</a></li>
+     <li><a href="linkc3.html">Чихиртма</a></li>
+     <li><a href="linkc4.html">Шашлык</a></li>
+    </ul>
+   </li>
+   <li><a href="asia.html" class="nobullet">Кухня Средней Азии</a></li>
+  </ul>
+ </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Врезка</title>
+  <style type="text/css">
+   .note {
+    float: right; /* Выравнивание по правому краю */
+    background: #F3F0E9; /* Цвет фона */
+    border: 1px solid #000; /* Параметры границы */
+    padding: 0 10px; /* Поля вокруг картинки */
+    margin: 5px 0 5px 10px; /* Отступы */
+    width: 120px; /* Ширина */
+    font-size: 0.9em; /* Размер шрифта */
+   }
+   .note P { margin: 0.6em 0; }
+   .note IMG { 
+    vertical-align: middle; /* Выравнивание по центру строки */ 
+   }
+  </style> 
+ </head>
+ <body> 
+  <div class="note">
+   <p><img src="images/tool_magicerase.gif" width="20" height="17" alt="Magic Erase" /> 
+   &#8212; инструмент Magic Erase.</p>
+   <p>По своему действию похож на инструмент Magic Wand, но в отличие от него, не 
+   выделяет область, а стирает ее.</p>
+  </div>
+  <p>Инструмент Magic Erase (Волшебный ластик) стирает пикселы близкие по цвету. 
+  Если мы работаем со слоем Background или со слоем, прозрачность на котором 
+  заблокирована, пикселы заменятся на фоновый цвет. Во всех остальных случаях 
+  мы получим прозрачную область.</p>
+  <p>Принцип работы с инструментом Magic Erase напоминает работу с инструментом 
+  Magic Wand. А именно, вначале устанавливаем подходящее значение Tolerance, включаем 
+  флажок Anti-aliased для создания плавных границ, убираем флажок с параметра Contiguous 
+  для одновременного удаления всего фона, после чего щелкаем по фотографии в районе 
+  неба. Если слой Background был предварительно переименован, мы получим прозрачные 
+  участки в нужных местах.</p> 
+ </body>
+</html>

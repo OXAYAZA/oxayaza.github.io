@@ -1,0 +1,14 @@
+.layout {
+ width: 980px; margin: auto;
+ position: relative; /* Относительное позиционирование */ 
+}
+.sidebar, .content { position: absolute; }
+.sidebar {
+ background: #C6DD7D; /* Цвет фона */
+ width: 180px; /* Ширина колонки */
+}
+.content {
+ background: #F4ECCE; /* Цвет фона */
+ left: 180px; /* Сдвиг вправо */
+ width: 800px; /* Ширина колонки */
+}

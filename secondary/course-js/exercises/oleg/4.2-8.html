@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.2-8 Случайное целое от min до max</title>
+</head>
+<body>
+
+	<script>
+		"use strict";
+
+		function randomInteger( min, max ) {
+			return Math.round( min + Math.random() * ( max - min ) );
+		}
+
+		console.log(
+			randomInteger(
+				+prompt( "Введите минимальное число: ", '0' ),
+				+prompt( "Введите максимальное число: ", '100' )
+			)
+		);
+	</script>
+</body>
+</html>

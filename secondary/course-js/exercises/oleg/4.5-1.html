@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.5-1 Определите, пуст ли объект</title>
+</head>
+<body>
+	<script>
+		"use strict";
+		var schedule = {};
+
+		function isEmpty( obj ) {
+			var count = 0;
+
+			for( var objItem in obj ) {
+				count++;
+			}
+
+			if( count > 0 ) {
+				return false;
+			}
+
+			return true;
+		}
+
+		alert( isEmpty(schedule) );
+
+		schedule["8:30"] = "подъём";
+
+		alert( isEmpty(schedule) );
+	</script>
+</body>
+</html>

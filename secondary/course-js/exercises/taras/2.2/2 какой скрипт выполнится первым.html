@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2 какой скрипт выполнится первым</title>
+</head>
+<body>
+	<script src="big.js"></script> <!-- этот -->
+	<script src="small.js"></script>
+
+	<script async src="big.js"></script>
+	<script async src="small.js"></script> <!-- этот -->
+
+	<script defer src="big.js"></script>  <!-- этот -->
+	<script defer src="small.js"></script>
+</body>
+</html>

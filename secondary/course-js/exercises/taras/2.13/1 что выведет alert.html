@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1 Что выведет alert</title>
+</head>
+<body>
+	<script>
+		alert( null || 2 || undefined ); // 2
+
+		alert( alert(1) || 2 || alert(3) ); // 1 и 2
+
+		alert( 1 && null && 2 ); // null
+
+		alert( alert(1) && alert(2) ); // 1 и undefined
+
+		alert( null || 2 && 3 || 4 ); // 3
+	</script>
+</body>
+</html>

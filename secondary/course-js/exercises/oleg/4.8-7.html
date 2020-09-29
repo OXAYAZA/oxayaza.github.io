@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>4.8-7 Случайный порядок в массиве</title>
+</head>
+
+<body>
+  <h1> Эту не смог</h1>
+  <script>
+    'use strict';
+    var arr = [1, 2, 3, 4, 5];
+
+    function sortRandom ( arr ){
+      var arr2 = [];
+      for( var i = 0; i < arr.length; i++ ){
+        arr2[i] = arr[ Math.floor( Math.random()*arr.length ) ];
+      }
+      return arr = arr2.slice(0);
+    }
+    console.log( 'cp0', arr.sort( sortRandom ) );
+    console.log( 'cp1', sortRandom ( arr ) );
+  </script>
+</body>
+
+</html>

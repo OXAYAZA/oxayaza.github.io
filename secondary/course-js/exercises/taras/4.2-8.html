@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.2-8 Случайное целое от min до max</title>
+</head>
+<body>
+	<script>
+		"use strict";
+
+		function randomInteger( min, max ) {
+			var tmp = Math.random();
+			console.log( 'cp0', tmp );
+			return Math.round( min + Math.random() * ( max - min ) );
+		}
+
+		console.log( randomInteger( 8, 10 ) );
+	</script>
+</body>
+</html>

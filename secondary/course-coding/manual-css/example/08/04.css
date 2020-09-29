@@ -1,0 +1,25 @@
+.footer { 
+  background: url(images/grass.png) 50% 53px no-repeat; /* Фоновый рисунок травы */
+  margin-top: -77px; /* Поднимаем вверх */
+  overflow: auto; /* Отменяем схлопывающиеся отступы */
+  position: relative; /* Относительное позиционирование */
+}
+.lion {
+  position: absolute; /* Абсолютное позиционирование */
+  left: 50%; /* По центру */
+  margin-left: -347px; /* Сдвигаем влево */
+  top: 3px; /* От верхнего края */
+}
+.footer-bg { 
+  background: #e2ed9c; /* Цвет фона подвала */
+  margin-top: 80px; /* Сдвигаем вниз */
+}
+.copyright {
+  width: 740px; /* Ширина макета без полей */
+  padding: 0 10px 10px; /* Поля */
+  margin: auto; /* Выравнивание по центру */
+  color: #526118; /* Цвет текста */
+}
+.copyright p { 
+  margin: 0 0 5px 170px; /* Отступы текста */ 
+}

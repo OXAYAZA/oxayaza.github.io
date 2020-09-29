@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Две колонки одной высоты</title>
+  <style type="text/css">
+   .layout {
+    border-left: 200px solid #C7E3E4; /* Ширина границы и цвет левой колонки */
+    background: #E0D2C7; /* Цвет фона правой колонки */
+   } 
+   .col1 {
+    width: 180px; /* Ширина левой колонки без полей */
+    float: left; /* Превращаем в плавающий элемент */
+    margin-left: -200px; /* Сдвигаем все влево на ширину границы */
+   }
+   .col1, .col2 { padding: 10px; }
+   .clear { clear: both;  /* Отменяем обтекание */ }
+  </style>
+ </head>
+ <body>
+  <div class="layout">
+   <div class="col1">Кумкват</div>
+   <div class="col2">
+    Небольшой экзотический фрукт оранжевого или оранжево-жёлтого цвета, 
+    по виду напоминающий мелкий апельсин.
+   </div><div class="clear"></div>
+  </div>
+ </body>
+</html>

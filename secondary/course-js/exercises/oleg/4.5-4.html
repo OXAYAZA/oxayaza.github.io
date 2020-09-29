@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.5-4 Умножьте численные свойства на 2</title>
+</head>
+<body>
+	<script>
+		"use strict";
+		console.clear();
+
+		function isNumeric(n) {
+			return !isNaN(parseFloat(n)) && isFinite(n)
+		}
+
+		var menu = {
+		  width: 200,
+		  height: 300,
+		  title: "My menu"
+		};
+
+		function multiplyNumeric( obj ) {
+			for( var key in obj ){
+				if ( isNumeric( obj[ key ] ) ) {
+					obj[ key ] *= 2;
+				}
+			}
+		}
+
+		var asdf = 'asdfasdf';
+
+
+		function procStr( str ) {
+			for( var i = 0; i < str.length; i++ ) {
+				str[i] = 'a';
+			}
+		}
+
+		multiplyNumeric( menu );
+		console.log( menu );
+
+		procStr( asdf );
+		console.log( asdf );
+
+	</script>
+</body>
+</html>

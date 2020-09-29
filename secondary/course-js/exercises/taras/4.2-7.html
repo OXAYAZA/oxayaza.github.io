@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4.2-7 Случайное из интервала (min, max)</title>
+</head>
+<body>
+	<script>
+		"use strict";
+
+		var minNumber = +prompt( 'Minimum number', '' ),
+			maxNumber = +prompt( 'Maximum number', '' ),
+			randomValue = Math.random();
+
+			if ( minNumber >= maxNumber ) {
+				alert( 'Wrong range.' );
+			} else if ( randomValue === 0 ) {
+				alert( minNumber );
+			} else {
+				while ( randomValue < minNumber ) {
+					randomValue = maxNumber * Math.random();
+				}
+				alert( randomValue );
+			}
+	</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<html>
+<head>
+
+
+<TITLE>Первые шаги - Учебник (руководство) по хтмл (html). Ступенька 22-ая.</TITLE>      
+<META HTTP-EQUIV="Content-Type" Content="text/html; Charset=Windows-1251">
+<META Name="copyright" Content="Алленова Наталья">
+<META NAME="author" CONTENT="Алленова Наталья Email: seagull@pisem.net"><META NAME="keywords" CONTENT="графика, хтмл, для, начинающий, начинающих, чайников, новичков, просто, основа, основы, графика, страница, домашний, домашняя, сайт, новый, новичок, html, обучение, учеба, пример, веб, мастер, веб-мастер, дизайн, веб-дизайн, вебдизайн, дезайн, веб-дезайн, вебдезайн, дезайнер, дизайнер, ступени, тэги, тэг, теги, тег, аттрибут, атрибуты, парамет, design, web, help, помощь, icq, e-mail, guest, book, guestbook, гостевая, книга, форум, аська, контакт, ссылка, link, links, banner, обмен, баннер, баннерами, банер, baner, друзья, friends, почитать, написать, вопросы, вопрос, ответ, проект, ступени, словарь"> <META NAME="description" CONTENT="Основы сайтостроительства для чайников: дизайн, графика, html (хтмл), реклама, размещение в сети интернет, продвижение, поддержка сайта. Уникальные учебники, пособия и статьи. Каталог ссылок. Создайте свою домашнюю страничку своими руками и без хтмл (html) редакторов.">
+
+
+
+
+</head>
+<body bgcolor="#ffffff" link="#000000" alink="#000000" vlink="#000000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" bottommargin="0" rightmargin="0"  style="margin:0;">
+
+
+<center>
+
+<table width="760" cellspacing="0" cellpadding="0">
+<tr>
+<td width="760" valign="top" bgcolor="#ffffff">
+
+
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td height="7" background="bgw.gif" valign="top"><img src="bgw.gif" border="0" width="1" height="1"></td></tr>
+<tr><td height="20" background="bg2.gif" valign="top"><img src="bg2.gif" border="0" width="1" height="20" align="absmiddle"><font face="verdana" size="-2"><img src="bg2.gif" border="0" width="15" height="20" align="absmiddle"><a href="index.html">Главная</a> / <a href="1step2.html">Html</a> / Учебник по Html. Ступенька 22-ая.</td><td heght="20" background="bg2.gif" align="right"><font face="verdana" size="-2">&nbsp;<img src="bg2.gif" border="0" width="15" height="20" align="absmiddle"></td></tr>
+<tr><td background="line2.gif" colspan="2"><img src="line2.gif" border="0" height="2" width="2"></td></tr>
+</table>
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+<br>
+<h4>Учебник по Html для чайников. Таблицы.</h4>
+<b>Ступенька 22-ая.</b>
+<br><br>
+
+Итак, как помнится, мы решили с вами создать вот такую таблицу: <br>
+ <img src="tabliza41.gif"><br><br>
+
+А получилось у нас еще только вот такая таблица: <br><br>
+<img src="tabliza21.gif"><br><br>
+ 
+В чем же дело? А в том, что мы не задали высоту и ширину ячейкам таблицы нашей:) Вспомним об атрибутах height и width - вы можете их задать для всей таблицы, для одного ряда, для ячейки (столбца). Высота и ширина могут задаваться как в пикселях, так и процентах. В нашем случае мы зададим ширину и высоту в пикселях для столбцов (ячеек). 
+
+
+
+ </div><br><br>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="7" background="bgw.gif">&nbsp;</td>
+<td width="20" background="bg2.gif">&nbsp;</td>
+<td width="7" background="bgw.gif">&nbsp;</td>
+<td background="bgw.gif">
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+<tt>
+&lt;table&gt;<br>
+&lt;tr&gt;<br>
+&lt;td <b> height="35" width="50"</b> bgcolor="#FFCC33"&gt; 1x1 &lt;/td&gt;<br>
+&lt;td <b>width="50"</b> bgcolor="#336699"&gt; 1x2 &lt;/td&gt;<br>
+&lt;td <b>width="50"</b> bgcolor="#FFCC33"&gt; 1x3 &lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td <b>height="35" width="50"</b> bgcolor="#336699"&gt; 2x1 &lt;/td&gt;<br>
+&lt;td <b>width="50"</b> bgcolor="#FFCC33"&gt; 2x2 &lt;/td&gt;<br>
+&lt;td <b>width="50"</b> bgcolor="#336699"&gt; 2x3 &lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;
+</tt>
+</td>
+</tr>
+</table><br><br>
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+
+Предвижу вопрос: - А почему высота задана только для двух ячеек (столбцов), а ширина для всех? Все очень просто: Если в ряду вы задаете для какой-либо ячейки  высоту большую, чем для других то, не смотря на это, все ячейки (столбцы) вашего ряда станут по высоте равны наибольшей:) вот так-то. Тоже самое с рядами, если вы зададите для какого-то ряда наибольшую длину, то все остальные ряды выровняются по этому наибольшему ряду (помните ряд - это не ячейка, поэтому я задала в нашем примере ширину для каждой ячейки (столбца)). 
+<br><br>
+Вы можете задать высоту и ширину для всей таблицы, тогда все ячейки (столбцы) и ряды поделят данное им пространство поровну, если не задавать им это пространство персонально (в процентах от общей ширины (высоты) таблицы или пикселях).<br><br>Кстати, атрибуты height и width можно задать в процентах:<br><br><tt>&lt;td width="<b>30%</b>"&gt; содержимое ячейки &lt;/td&gt;</tt><br><br>
+Если мы задали для ячейки ширину в 30 процентов, как в нашем примере, то это значит, что на остальные ячейки у нас осталось еще 70 процентов, т.е. сумма их ширин не должна превышать 70 процентов. Почему? Простая арифметика: в сумме это все должно равняться 100%. Считаем: 100 – 30 = 70. :)  
+<br><br>
+Вернемся к нашему примеру: теперь мы почти получили то, что хотели:) 
+
+<br><br>
+
+
+<img src="tabliza31.gif">
+
+<br><br>
+Теперь нам осталось лишь выровнять содержимое (текст) внутри таблицы: 
+ </div><br><br>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="7" background="bgw.gif">&nbsp;</td>
+<td width="20" background="bg2.gif">&nbsp;</td>
+<td width="7" background="bgw.gif">&nbsp;</td>
+<td background="bgw.gif">
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+
+<tt>
+&lt;table&gt;<br>
+&lt;tr&gt;<br>
+&lt;td  height="35" width="50" bgcolor="#FFCC33"&gt; <b>&lt;center&gt;</b> 1x1 <b>&lt;/center&gt;</b> &lt;/td&gt;<br>
+&lt;td width="50" bgcolor="#336699"&gt; <b>&lt;center&gt;</b> 1x2 <b>&lt;/center&gt;</b> &lt;/td&gt;<br>
+&lt;td width="50" bgcolor="#FFCC33"&gt; <b>&lt;center&gt;</b >1x3 <b>&lt;/center&gt;</b> &lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td height="35" width="50" bgcolor="#336699"&gt; <b>&lt;center&gt;</b> 2x1 <b>&lt;/center&gt;</b> &lt;/td&gt;<br>
+&lt;td width="50" bgcolor="#FFCC33"&gt; <b>&lt;center&gt;</b> 2x2 <b>&lt;/center&gt;</b> &lt;/td&gt;<br>
+&lt;td width="50" bgcolor="#336699"&gt; <b>&lt;center&gt;</b> 2x3 <b>&lt;/center&gt;</b> &lt;/td&gt;<!--Rating@Mail.ru COUNTER--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<img src="http://top.list.ru/counter'+
+'?id=840315;js='+js+a+';rand='+Math.random()+
+'" height=1 width=1/>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><img
+src="http://top.list.ru/counter?js=na;id=840315"
+height=1 width=1 alt=""/></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER--><!--Rating@Mail.ru LOGO--><a target=_top
+href="http://top.mail.ru/jump?from=840315"><img
+src="http://top.list.ru/counter?id=840315;t=49;l=1"
+border=0 height=1 width=1
+alt="Рейтинг@Mail.ru"/></a><!--/LOGO--><!--begin of Top100--><a href="http://top100.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?253736" alt="Rambler's Top100" width=1 height=1 border=0></a><br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;
+</tt>
+</td>
+</tr>
+</table><br><br>
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+
+И... готово!:) 
+
+<br><br>
+
+
+<img src="tabliza11.gif">
+
+<br><br>
+
+Поскольку содержимое каждой ячейки как бы обстановка отдельной комнаты, то и тэги для центрирования текста нам нужно было прописать в нашем примере для содержимого (текста) каждой ячейки, что мы с вами и сделали.<br><br>
+Вы должны помнить и другие тэги для выравнивания содержимого, кроме &lt;center&gt;, а также атрибут align, который мы прописывали для них. Этот атрибут можно задать и для ячеек таблицы:<br><br>
+<tt>&lt;td <b>align=”center”</b>&gt;2x2&lt;/td&gt;</tt><br><br>
+Соответственно, атрибут align может принимать еще значения right и left. Значение justify при употреблении с тэгом &lt;td&gt; атрибут align принимать не может. В нашем случае атрибут align выравнивает содержимое внутри ячейки (на всякий случай, если вы еще не поняли его назначение).<br><br>
+В каждой ячейке могут находиться и картинки, и текст (+тэги и атрибуты применяемые к ним), и даже таблицы (в этом случае они называются - вложенные таблицы). Т.е. тэги, которые мы применяем для форматирования содержимого (контента) - все те же.
+<br><br>
+Давайте шагнем на следующую ступеньку и продолжим разговор о таблицах.
+
+
+
+</div>
+<br>
+<hr size="1" noshade color="#000000">
+
+<div style="FONT-FAMILY: verdana, geneva, arial, sans-serif; FONT-SIZE: 12px; LINE-HEIGHT: 16px">
+
+&lt;&lt;&lt; <a href="21step2.html">Ступенька 21-ая: Назад</a> |  <a href="23step2.html">Далее: Ступенька 23-ая</a> &gt;&gt;&gt;
+
+
+</div>
+</td>
+
+</tr></table>
+</center>
+</body>
+</html>
