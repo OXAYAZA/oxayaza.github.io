@@ -120,14 +120,20 @@ document.addEventListener( 'DOMContentLoaded', function () {
     node.Popup = {
       state: false,
       show: function() {
-        if(node.Popup.state) return;
+        if(node.Popup.state) {
+          console.warn(`[Popup]: Tried to show already shown popup.`);
+          return;
+        }
 
         node.classList.add("popup-opened");
         document.body.classList.add("scroll-disabled");
         node.Popup.state = true;
       },
       hide: function() {
-        if(!node.Popup.state) return;
+        if(!node.Popup.state) {
+          console.warn(`[Popup]: Tried to hide already hidden popup.`);
+          return;
+        }
 
         node.classList.remove("popup-opened");
         document.body.classList.remove("scroll-disabled");
@@ -142,8 +148,9 @@ document.addEventListener( 'DOMContentLoaded', function () {
   document.querySelectorAll("[data-popup-button]").forEach(function(node){
     node.addEventListener("click", function (){
       let key = node.getAttribute("data-popup-button");
-      let popupNode = document.querySelector(`[data-popup="${key}"]`)
-      popupNode.Popup.show();
+      let popupNode = document.querySelector(`[data-popup="${key}"]`);
+      if(popupNode) popupNode.Popup.show();
+      else console.warn(`[Popup Button]: Can't found popup with name "${key}"`);
     });
   });
 });
